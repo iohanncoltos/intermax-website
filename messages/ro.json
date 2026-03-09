@@ -1,0 +1,398 @@
+{
+  "common": {
+    "learnMore": "Află mai multe",
+    "getStarted": "Începe acum",
+    "contactUs": "Contactează-ne",
+    "viewPortfolio": "Vezi portofoliu",
+    "readMore": "Citește mai mult",
+    "backToHome": "Înapoi acasă"
+  },
+  "nav": {
+    "home": "Acasă",
+    "industries": "Divizii",
+    "portfolio": "Portofoliu",
+    "about": "Despre",
+    "contact": "Contact",
+    "construction": "Construcții",
+    "defense": "Defense Engineering",
+    "agriculture": "Servicii în agricultură"
+  },
+  "home": {
+    "hero": {
+      "title": "Soluții de inginerie avansate pentru trei industrii vitale",
+      "subtitle": "InterMax livrează expertiza de vârf în construcții tehnice, sisteme de apărare și tehnologii agricole moderne. O singură echipă, trei domenii de excelență.",
+      "cta1": "Explorează diviziile",
+      "cta2": "Vezi proiectele"
+    },
+    "verticals": {
+      "title": "Diviziile noastre",
+      "construction": {
+        "title": "Construcții",
+        "description": "Sisteme tehnice avansate pentru clădiri moderne și obiective speciale.",
+        "bullets": ["Fațade ventilate și pereti cortină", "Compartimentări REI și porți metalice", "Mansarde și etaje tehnice"]
+      },
+      "defense": {
+        "title": "Defense Engineering",
+        "description": "Soluții integrate pentru apărare, securitate și sisteme aeriene neînsoțite.",
+        "bullets": ["Sisteme UAS profesionale", "Platforme de securitate perimetrală", "Soluții C4ISR integrate"]
+      },
+      "agriculture": {
+        "title": "Servicii în agricultură",
+        "description": "Tehnologii moderne pentru agricultură de precizie și monitorizare aeriana.",
+        "bullets": ["Cartografiere și analiză multispect rală", "Monitorizare cultură și irigații", "Consultanță agronomică digitală"]
+      }
+    },
+    "competencies": {
+      "title": "Competențe cheie",
+      "engineering": {
+        "title": "Inginerie de sistem",
+        "description": "Proiectare tehnică complexă și integrare multi-domeniu"
+      },
+      "manufacturing": {
+        "title": "Fabricație precisă",
+        "description": "Ateliere proprii pentru componente metalice și sisteme compuse"
+      },
+      "integration": {
+        "title": "Integrare și testare",
+        "description": "Protocol riguros de verificare și comisionare pe șantier"
+      },
+      "support": {
+        "title": "Suport post-livrare",
+        "description": "Mentenanță, upgrade-uri și răspuns rapid la nevoile clientului"
+      },
+      "compliance": {
+        "title": "Conformitate și certificări",
+        "description": "Standarde ISO, norme locale și reglementări de industrie"
+      },
+      "innovation": {
+        "title": "Inovație continuă",
+        "description": "Cercetare aplicată și parteneriate cu producători globali"
+      }
+    },
+    "caseStudies": {
+      "title": "Proiecte reprezentative",
+      "viewAll": "Vezi toate proiectele"
+    },
+    "compliance": {
+      "title": "Calitate și conformitate",
+      "description": "Toate proiectele InterMax respectă standardele internaționale de calitate și certificările specifice fiecărei industrii. Lucrăm conform ISO 9001, ISO 14001 și cu autorizații ISCIR, MLPDA și MADR acolo unde se aplică."
+    },
+    "ctaBand": {
+      "title": "Pregătit să discutăm proiectul tău?",
+      "subtitle": "Contactează-ne astăzi pentru o consultație personalizată."
+    }
+  },
+  "construction": {
+    "hero": {
+      "title": "Construcții tehnice de înaltă performanță",
+      "subtitle": "Sisteme integrate pentru fațade, compartimentări, structuri metalice și amenajări tehnice complexe.",
+      "cta1": "Solicită ofertă",
+      "cta2": "Vezi proiecte"
+    },
+    "capabilities": {
+      "title": "Servicii și capabilități",
+      "facades": {
+        "title": "Fațade ventilate și pereți cortină",
+        "description": "Sisteme cu performanță termică ridicată, aspect modern, durabilitate pe termen lung"
+      },
+      "partitions": {
+        "title": "Compartimentări REI",
+        "description": "Pereți și uși rezistente la foc conform normelor românești și europene"
+      },
+      "metalwork": {
+        "title": "Structuri și confecții metalice",
+        "description": "Scări, balustrade, porți, console, grinzi și cadre sudate"
+      },
+      "roofing": {
+        "title": "Mansarde și acoperișuri tehnice",
+        "description": "Structuri ușoare, hidroizolații certificate, detalii de etanșare complexe"
+      },
+      "doors": {
+        "title": "Porți metalice industriale",
+        "description": "Secționale, batante, culisante, cu automatizare și control acces"
+      },
+      "installation": {
+        "title": "Execuție și montaj",
+        "description": "Echipe proprii de montatori, supraveghere tehnică, QA/QC pe șantier"
+      }
+    },
+    "process": {
+      "title": "Cum lucrăm",
+      "step1": {
+        "title": "Consultanță și măsurători",
+        "description": "Deplasare la locație, analiza cerințelor, măsurători tehnice precise"
+      },
+      "step2": {
+        "title": "Proiectare și ofertare",
+        "description": "Detalii de execuție, calcule structurale, deviz transparent"
+      },
+      "step3": {
+        "title": "Fabricație în atelier",
+        "description": "Control calitate riguros, respectarea termenelor, materiale certificate"
+      },
+      "step4": {
+        "title": "Montaj și recepție",
+        "description": "Echipe experimentate, coordinare cu alți meșteșugari, documentație completă"
+      }
+    },
+    "whyUs": {
+      "title": "De ce InterMax",
+      "point1": "Peste 15 ani de experiență în proiecte rezidențiale, comerciale și industriale",
+      "point2": "Atelier propriu de tâmplărie metalică și fabricație profile",
+      "point3": "Echipe de montaj certificate și asigurate",
+      "point4": "Parteneriate directe cu producători europeni de sisteme premium",
+      "point5": "Garanții extinse și service post-montaj rapid"
+    },
+    "faq": {
+      "title": "Întrebări frecvente",
+      "q1": {
+        "question": "Ce tip de proiecte de construcții realizați?",
+        "answer": "Realizăm fațade ventilate, compartimentări REI, structuri metalice, mansarde, porți industriale și alte lucrări tehnice pentru clădiri rezidențiale, comerciale și industriale."
+      },
+      "q2": {
+        "question": "Aveți atelier propriu?",
+        "answer": "Da, dispunem de atelier modern echipat cu mașini CNC pentru prelucrarea metalului și fabricarea componentelor la comandă."
+      },
+      "q3": {
+        "question": "Oferiți garanție?",
+        "answer": "Toate lucrările beneficiază de garanție conform legislației în vigoare, iar pentru anumite sisteme oferim garanții extinse prin parteneriatele noastre."
+      },
+      "q4": {
+        "question": "Lucrați și în afara Bucureștiului?",
+        "answer": "Da, desfășurăm proiecte pe întreg teritoriul României și, selectiv, în țările vecine."
+      },
+      "q5": {
+        "question": "Cât durează un proiect tipic?",
+        "answer": "Durata depinde de complexitate, dar oferim planificare detaliată și termene clare încă din faza de ofertare."
+      }
+    },
+    "ctaBand": {
+      "title": "Ai un proiect de construcție în plan?",
+      "subtitle": "Hai să discutăm cerințele tale și să îți oferim o soluție tehnică optimă."
+    }
+  },
+  "defense": {
+    "hero": {
+      "title": "Sisteme avansate pentru apărare și securitate",
+      "subtitle": "Platforme UAS, soluții de supraveghere perimetrală, integrare C4ISR și consultanță tactică.",
+      "cta1": "Solicită prezentare",
+      "cta2": "Vezi capabilități"
+    },
+    "capabilities": {
+      "title": "Servicii și capabilități",
+      "uas": {
+        "title": "Sisteme aeriene neînsotite (UAS)",
+        "description": "Platforme multi-rotor și fixed-wing pentru recunoaștere, supraveghere și misiuni speciale"
+      },
+      "isr": {
+        "title": "ISR și C4ISR",
+        "description": "Soluții integrate de informare, supraveghere, recunoaștere și comandă-control"
+      },
+      "perimeter": {
+        "title": "Securitate perimetrală",
+        "description": "Senzori radar, camere termice, sisteme de detecție intruziune și integrare alarmă"
+      },
+      "training": {
+        "title": "Instruire operatori",
+        "description": "Cursuri teoretice și practice pentru pilotaj UAS, proceduri tactice și mentenanță nivel I"
+      },
+      "maintenance": {
+        "title": "Suport tehnic și mentenanță",
+        "description": "Service autorizat, piese de schimb, upgrade firmware, calibrări"
+      },
+      "consulting": {
+        "title": "Consultanță tactică",
+        "description": "Analiză necesități, design arhitectură sistem, integrare cu echipamente existente"
+      }
+    },
+    "process": {
+      "title": "Cum lucrăm",
+      "step1": {
+        "title": "Analiza cerințelor operaționale",
+        "description": "Interviu cu beneficiarul, evaluare scenario, definire capabilități necesare"
+      },
+      "step2": {
+        "title": "Proiectare soluție",
+        "description": "Selectare platforme, configurare payload, arhitectură comunicații, integrare C2"
+      },
+      "step3": {
+        "title": "Livrare și instalare",
+        "description": "Transport securizat, configurare inițială, verificări funcționale, calibrare senzori"
+      },
+      "step4": {
+        "title": "Instruire și suport continuu",
+        "description": "Training echipă, documentație operațională, service reactiv, upgrade sistem"
+      }
+    },
+    "whyUs": {
+      "title": "De ce InterMax",
+      "point1": "Parteneriate directe cu producători globali de sisteme UAS și securitate",
+      "point2": "Experiență în proiecte pentru instituții publice și clienți priviți",
+      "point3": "Certificări operatori și autorizații de lucru în spații controlate",
+      "point4": "Capabilitate de integrare cu infrastructuri IT/OT existente",
+      "point5": "Suport tehnic local și service rapid pentru platforme critice"
+    },
+    "faq": {
+      "title": "Întrebări frecvente",
+      "q1": {
+        "question": "Ce tipuri de drone furnizați?",
+        "answer": "Oferim platforme multi-rotor pentru supraveghere tactică, fixed-wing pentru recunoaștere pe arii extinse și soluții hibride, în funcție de nevoi."
+      },
+      "q2": {
+        "question": "Oferiți instruire pentru operatori?",
+        "answer": "Da, cursurile noastre acoperă pilotaj, proceduri de siguranță, legislație și mentenanță de bază."
+      },
+      "q3": {
+        "question": "Puteți integra sistemele cu infrastructura noastră existentă?",
+        "answer": "Da, avem experiență în integrare C4ISR, conectare la centre de comandă și sincronizare cu alte senzori."
+      },
+      "q4": {
+        "question": "Oferiti suport post-vânzare?",
+        "answer": "Oferim pachete de mentenanță, service autorizat, piese de schimb și upgrades tehnologice pe toată durata de viață a sistemului."
+      },
+      "q5": {
+        "question": "Lucrați cu instituții guvernamentale?",
+        "answer": "Da, avem experiență în proiecte pentru MApN, MAI și alte agenții guvernamentale, cu respectarea tuturor procedurilor de achiziție și securitate."
+      }
+    },
+    "ctaBand": {
+      "title": "Ai nevoie de o soluție de apărare sau securitate?",
+      "subtitle": "Contactează-ne pentru o evaluare tehnică și o ofertă personalizată."
+    }
+  },
+  "agriculture": {
+    "hero": {
+      "title": "Agricultură de precizie prin tehnologie aeriană",
+      "subtitle": "Cartografiere multispect rală, monitorizare cultură, analiză vegetație și consultanță agronomică bazată pe date.",
+      "cta1": "Solicită demo",
+      "cta2": "Vezi studii de caz"
+    },
+    "capabilities": {
+      "title": "Servicii și capabilități",
+      "mapping": {
+        "title": "Cartografiere și ortofotoplanuri",
+        "description": "Imagini de înaltă rezoluție, modele 3D ale terenului, delimităre precisă parcele"
+      },
+      "ndvi": {
+        "title": "Analiză multispect rală (NDVI, NDRE)",
+        "description": "Detecție timpurie a stresului vegetal, evaluare vigoare cultură, hartare zone problematice"
+      },
+      "irrigation": {
+        "title": "Monitorizare irigații",
+        "description": "Identificare zone sub/suprairigate, optimizare consum apă, rapoarte periodice"
+      },
+      "scouting": {
+        "title": "Scouting și inspecție",
+        "description": "Detectare boli, dăunători, lipsuri răsărit, evaluare daune, inventariere arbori"
+      },
+      "consulting": {
+        "title": "Consultanță agronomică",
+        "description": "Interpretare date, recomandări fertilizare variabilă, strategii de intervenție"
+      },
+      "training": {
+        "title": "Training și transfer know-how",
+        "description": "Instruire echipe interne, proceduri de zbor, procesare imagini, interpretare hărți"
+      }
+    },
+    "process": {
+      "title": "Cum lucrăm",
+      "step1": {
+        "title": "Consultanță inițială",
+        "description": "Discutăm obiectivele, evaluăm suprafața, stabilim frecvența zborurilor"
+      },
+      "step2": {
+        "title": "Zbor și achiziție date",
+        "description": "Planificare misiune, captură imagini RGB și multispectrale, respectare norme AACR"
+      },
+      "step3": {
+        "title": "Procesare și analiză",
+        "description": "Generare ortofotoplanuri, calcul indici vegetație, creare hărți de prescripție"
+      },
+      "step4": {
+        "title": "Raportare și acțiune",
+        "description": "Livrare rapoarte interactive, recomandări practice, suport implementare"
+      }
+    },
+    "whyUs": {
+      "title": "De ce InterMax",
+      "point1": "Senzori multispect rali de ultimă generație pentru detectie prec isă",
+      "point2": "Software profesional de procesare și analiză agronomică",
+      "point3": "Colaborare cu ingineri agronomi certificați pentru interpretare date",
+      "point4": "Flexibilitate: zbor la cerere sau contracte sezoniere",
+      "point5": "Rapoarte clare, actionabile, adaptate nivelului de expertiză al clientului"
+    },
+    "faq": {
+      "title": "Întrebări frecvente",
+      "q1": {
+        "question": "Ce suprafețe puteți acoperi?",
+        "answer": "De la câteva hectare până la mii de hectare, în funcție de platformă și perioada disponibilă."
+      },
+      "q2": {
+        "question": "Cât de des trebuie făcute zborurile?",
+        "answer": "Depinde de cultură și obiectiv: de obicei la 10-14 zile pentru monitorizare vegetație, sau la nevoie pentru investigații punctuale."
+      },
+      "q3": {
+        "question": "Oferit i și servicii de tratament/pulverizare cu drona?",
+        "answer": "Momentan ne concentrăm pe cartografiere și analiză. Pentru aplicații fitosanitare, colaborăm cu parteneri specializați."
+      },
+      "q4": {
+        "question": "Ce livrabile primesc?",
+        "answer": "Ortofotoplanuri georeferențiate, hărți NDVI/NDRE, rapoarte de analiză, recomandări agronomice și acces la platforma online de vizualizare."
+      },
+      "q5": {
+        "question": "Pot folosi datele pentru cereri APIA?",
+        "answer": "Da, ortofotoplanurile noastre pot fi utilizate ca documentație suport, dar verifică cerințele specifice cu consultantul tău."
+      }
+    },
+    "ctaBand": {
+      "title": "Vrei să optimizezi producția agricolă cu date aeriene?",
+      "subtitle": "Solicită o demonstrație pe terenul tău și vezi diferența."
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Portofoliu de proiecte",
+      "subtitle": "Descoperă o selecție din proiectele noastre reprezentative în construcții, apărare și agricultură."
+    },
+    "comingSoon": "Studiurile de caz detaliate vor fi disponibile în curând. Între timp, contactează-ne direct pentru referințe și example de proiecte."
+  },
+  "about": {
+    "hero": {
+      "title": "Despre InterMax",
+      "subtitle": "O echipă de ingineri, tehnicieni și specialisti dedicați inovației și excelenței tehnice."
+    },
+    "comingSoon": "Pagina despre noi este în curs de dezvoltare. Pentru informații despre companie, echipă și valori, te rugăm să ne contactezi direct."
+  },
+  "contact": {
+    "hero": {
+      "title": "Hai să discutăm",
+      "subtitle": "Indiferent de industrie sau dimensiunea proiectului, suntem aici să te ajutăm."
+    },
+    "form": {
+      "title": "Trimite-ne un mesaj",
+      "name": "Nume complet",
+      "email": "Email",
+      "message": "Mesaj",
+      "send": "Trimite mesaj",
+      "sending": "Se trimite...",
+      "success": "Mesaj trimis cu succes!",
+      "error": "A apărut o eroare. Te rugăm să încerci din nou."
+    },
+    "info": {
+      "title": "Informații de contact",
+      "address": "Str. Exemplu nr. 123, București, România",
+      "phone": "+40 XXX XXX XXX",
+      "email": "contact@intermax.ro",
+      "hours": "Luni - Vineri: 9:00 - 18:00"
+    }
+  },
+  "footer": {
+    "tagline": "Soluții de inginerie integrate pentru construcții, apărare și agricultură.",
+    "industries": "Divizii",
+    "company": "Companie",
+    "legal": "Legal",
+    "privacy": "Politică de confidențialitate",
+    "terms": "Termeni și condiții",
+    "allRightsReserved": "Toate drepturile rezervate."
+  }
+}

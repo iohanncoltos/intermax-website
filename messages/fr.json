@@ -1,0 +1,398 @@
+{
+  "common": {
+    "learnMore": "En savoir plus",
+    "getStarted": "Commencer",
+    "contactUs": "Nous contacter",
+    "viewPortfolio": "Voir le portfolio",
+    "readMore": "Lire la suite",
+    "backToHome": "Retour à l'accueil"
+  },
+  "nav": {
+    "home": "Accueil",
+    "industries": "Divisions",
+    "portfolio": "Portfolio",
+    "about": "À propos",
+    "contact": "Contact",
+    "construction": "Construction",
+    "defense": "Ingénierie de défense",
+    "agriculture": "Services agricoles"
+  },
+  "home": {
+    "hero": {
+      "title": "Solutions d'ingénierie avancées pour trois industries vitales",
+      "subtitle": "InterMax offre une expertise de pointe en construction technique, systèmes de défense et technologies agricoles modernes. Une équipe, trois domaines d'excellence.",
+      "cta1": "Explorer les divisions",
+      "cta2": "Voir les projets"
+    },
+    "verticals": {
+      "title": "Nos divisions",
+      "construction": {
+        "title": "Construction",
+        "description": "Systèmes techniques avancés pour bâtiments modernes et installations spéciales.",
+        "bullets": ["Façades ventilées et murs-rideaux", "Cloisons coupe-feu et portes métalliques", "Combles et toitures techniques"]
+      },
+      "defense": {
+        "title": "Ingénierie de défense",
+        "description": "Solutions intégrées pour la défense, la sécurité et les systèmes aériens sans pilote.",
+        "bullets": ["Plateformes UAS professionnelles", "Systèmes de sécurité périmétrique", "Solutions C4ISR intégrées"]
+      },
+      "agriculture": {
+        "title": "Services agricoles",
+        "description": "Technologies modernes pour l'agriculture de précision et la surveillance aérienne.",
+        "bullets": ["Cartographie et analyse multispectrale", "Surveillance des cultures et irrigations", "Conseil agronomique numérique"]
+      }
+    },
+    "competencies": {
+      "title": "Compétences clés",
+      "engineering": {
+        "title": "Ingénierie système",
+        "description": "Conception technique complexe et intégration multi-domaines"
+      },
+      "manufacturing": {
+        "title": "Fabrication de précision",
+        "description": "Ateliers internes pour composants métalliques et systèmes composites"
+      },
+      "integration": {
+        "title": "Intégration et tests",
+        "description": "Protocole de vérification rigoureux et mise en service sur site"
+      },
+      "support": {
+        "title": "Support après-livraison",
+        "description": "Maintenance, mises à jour et réponse rapide aux besoins clients"
+      },
+      "compliance": {
+        "title": "Conformité et certifications",
+        "description": "Normes ISO, réglementations locales et certifications industrielles"
+      },
+      "innovation": {
+        "title": "Innovation continue",
+        "description": "Recherche appliquée et partenariats avec des fabricants mondiaux"
+      }
+    },
+    "caseStudies": {
+      "title": "Projets phares",
+      "viewAll": "Voir tous les projets"
+    },
+    "compliance": {
+      "title": "Qualité et conformité",
+      "description": "Tous les projets InterMax respectent les normes de qualité internationales et les certifications spécifiques à chaque industrie. Nous travaillons conformément à ISO 9001, ISO 14001 et avec les autorisations ISCIR, MLPDA et MADR le cas échéant."
+    },
+    "ctaBand": {
+      "title": "Prêt à discuter de votre projet?",
+      "subtitle": "Contactez-nous aujourd'hui pour une consultation personnalisée."
+    }
+  },
+  "construction": {
+    "hero": {
+      "title": "Construction technique haute performance",
+      "subtitle": "Systèmes intégrés pour façades, cloisons, structures métalliques et installations techniques complexes.",
+      "cta1": "Demander un devis",
+      "cta2": "Voir les projets"
+    },
+    "capabilities": {
+      "title": "Services et capacités",
+      "facades": {
+        "title": "Façades ventilées et murs-rideaux",
+        "description": "Systèmes à haute performance thermique, aspect moderne, durabilité à long terme"
+      },
+      "partitions": {
+        "title": "Cloisons coupe-feu",
+        "description": "Murs et portes résistants au feu conformes aux normes roumaines et européennes"
+      },
+      "metalwork": {
+        "title": "Structures et fabrication métallique",
+        "description": "Escaliers, garde-corps, portails, consoles, poutres et cadres soudés"
+      },
+      "roofing": {
+        "title": "Combles et toitures techniques",
+        "description": "Structures légères, étanchéité certifiée, détails d'étanchéité complexes"
+      },
+      "doors": {
+        "title": "Portails métalliques industriels",
+        "description": "Sectionnels, battants, coulissants, avec automation et contrôle d'accès"
+      },
+      "installation": {
+        "title": "Exécution et installation",
+        "description": "Équipes d'installation internes, supervision technique, QA/QC sur site"
+      }
+    },
+    "process": {
+      "title": "Comment nous travaillons",
+      "step1": {
+        "title": "Consultation et mesures",
+        "description": "Visite du site, analyse des exigences, mesures techniques précises"
+      },
+      "step2": {
+        "title": "Conception et devis",
+        "description": "Détails d'exécution, calculs structurels, devis transparent"
+      },
+      "step3": {
+        "title": "Fabrication en atelier",
+        "description": "Contrôle qualité rigoureux, respect des délais, matériaux certifiés"
+      },
+      "step4": {
+        "title": "Installation et réception",
+        "description": "Équipes expérimentées, coordination avec autres corps de métier, documentation complète"
+      }
+    },
+    "whyUs": {
+      "title": "Pourquoi InterMax",
+      "point1": "Plus de 15 ans d'expérience dans les projets résidentiels, commerciaux et industriels",
+      "point2": "Atelier métallique interne et installation de fabrication de profilés",
+      "point3": "Équipes d'installation certifiées et assurées",
+      "point4": "Partenariats directs avec des fabricants de systèmes premium européens",
+      "point5": "Garanties étendues et service après-installation rapide"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": {
+        "question": "Quels types de projets de construction réalisez-vous?",
+        "answer": "Nous réalisons des façades ventilées, cloisons coupe-feu, structures métalliques, combles, portails industriels et autres travaux techniques pour bâtiments résidentiels, commerciaux et industriels."
+      },
+      "q2": {
+        "question": "Avez-vous votre propre atelier?",
+        "answer": "Oui, nous disposons d'un atelier moderne équipé de machines CNC pour le traitement des métaux et la fabrication de composants sur mesure."
+      },
+      "q3": {
+        "question": "Offrez-vous une garantie?",
+        "answer": "Tous les travaux sont couverts par une garantie conforme à la législation en vigueur, et pour certains systèmes nous offrons des garanties étendues via nos partenariats."
+      },
+      "q4": {
+        "question": "Travaillez-vous en dehors de Bucarest?",
+        "answer": "Oui, nous réalisons des projets dans toute la Roumanie et, sélectivement, dans les pays voisins."
+      },
+      "q5": {
+        "question": "Combien de temps dure un projet typique?",
+        "answer": "La durée dépend de la complexité, mais nous fournissons une planification détaillée et des délais clairs dès la phase de devis."
+      }
+    },
+    "ctaBand": {
+      "title": "Vous avez un projet de construction en tête?",
+      "subtitle": "Discutons de vos exigences et proposons une solution technique optimale."
+    }
+  },
+  "defense": {
+    "hero": {
+      "title": "Systèmes avancés pour la défense et la sécurité",
+      "subtitle": "Plateformes UAS, solutions de surveillance périmétrique, intégration C4ISR et conseil tactique.",
+      "cta1": "Demander une présentation",
+      "cta2": "Voir les capacités"
+    },
+    "capabilities": {
+      "title": "Services et capacités",
+      "uas": {
+        "title": "Systèmes aériens sans pilote (UAS)",
+        "description": "Plateformes multi-rotors et à voilure fixe pour reconnaissance, surveillance et missions spéciales"
+      },
+      "isr": {
+        "title": "ISR et C4ISR",
+        "description": "Solutions intégrées de renseignement, surveillance, reconnaissance et commandement-contrôle"
+      },
+      "perimeter": {
+        "title": "Sécurité périmétrique",
+        "description": "Capteurs radar, caméras thermiques, systèmes de détection d'intrusion et intégration d'alarme"
+      },
+      "training": {
+        "title": "Formation des opérateurs",
+        "description": "Cours théoriques et pratiques pour pilotage UAS, procédures tactiques et maintenance niveau I"
+      },
+      "maintenance": {
+        "title": "Support technique et maintenance",
+        "description": "Service autorisé, pièces de rechange, mises à jour firmware, calibrations"
+      },
+      "consulting": {
+        "title": "Conseil tactique",
+        "description": "Analyse des besoins, conception d'architecture système, intégration avec équipements existants"
+      }
+    },
+    "process": {
+      "title": "Comment nous travaillons",
+      "step1": {
+        "title": "Analyse des exigences opérationnelles",
+        "description": "Entretien avec le client, évaluation des scénarios, définition des capacités requises"
+      },
+      "step2": {
+        "title": "Conception de la solution",
+        "description": "Sélection de plateformes, configuration charge utile, architecture communications, intégration C2"
+      },
+      "step3": {
+        "title": "Livraison et installation",
+        "description": "Transport sécurisé, configuration initiale, vérifications fonctionnelles, calibration capteurs"
+      },
+      "step4": {
+        "title": "Formation et support continu",
+        "description": "Formation d'équipe, documentation opérationnelle, service réactif, mises à jour système"
+      }
+    },
+    "whyUs": {
+      "title": "Pourquoi InterMax",
+      "point1": "Partenariats directs avec des fabricants mondiaux de systèmes UAS et de sécurité",
+      "point2": "Expérience dans des projets pour institutions publiques et clients privés",
+      "point3": "Certifications opérateurs et autorisations de travail en espaces contrôlés",
+      "point4": "Capacité d'intégration avec infrastructures IT/OT existantes",
+      "point5": "Support technique local et service rapide pour plateformes critiques"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": {
+        "question": "Quels types de drones fournissez-vous?",
+        "answer": "Nous proposons des plateformes multi-rotors pour surveillance tactique, à voilure fixe pour reconnaissance sur grandes zones, et solutions hybrides, selon les besoins."
+      },
+      "q2": {
+        "question": "Proposez-vous une formation pour opérateurs?",
+        "answer": "Oui, nos cours couvrent le pilotage, les procédures de sécurité, la législation et la maintenance de base."
+      },
+      "q3": {
+        "question": "Pouvez-vous intégrer les systèmes avec notre infrastructure existante?",
+        "answer": "Oui, nous avons de l'expérience en intégration C4ISR, connexion aux centres de commandement et synchronisation avec d'autres capteurs."
+      },
+      "q4": {
+        "question": "Offrez-vous un support après-vente?",
+        "answer": "Nous proposons des forfaits de maintenance, service autorisé, pièces de rechange et mises à jour technologiques tout au long du cycle de vie du système."
+      },
+      "q5": {
+        "question": "Travaillez-vous avec des institutions gouvernementales?",
+        "answer": "Oui, nous avons de l'expérience dans des projets pour le Ministère de la Défense, le Ministère de l'Intérieur et d'autres agences gouvernementales, en respectant toutes les procédures d'acquisition et de sécurité."
+      }
+    },
+    "ctaBand": {
+      "title": "Besoin d'une solution de défense ou de sécurité?",
+      "subtitle": "Contactez-nous pour une évaluation technique et un devis personnalisé."
+    }
+  },
+  "agriculture": {
+    "hero": {
+      "title": "Agriculture de précision par technologie aérienne",
+      "subtitle": "Cartographie multispectrale, surveillance des cultures, analyse de végétation et conseil agronomique basé sur les données.",
+      "cta1": "Demander une démo",
+      "cta2": "Voir les études de cas"
+    },
+    "capabilities": {
+      "title": "Services et capacités",
+      "mapping": {
+        "title": "Cartographie et orthophotos",
+        "description": "Imagerie haute résolution, modèles 3D du terrain, délimitation précise des parcelles"
+      },
+      "ndvi": {
+        "title": "Analyse multispectrale (NDVI, NDRE)",
+        "description": "Détection précoce du stress végétal, évaluation de la vigueur des cultures, cartographie des zones problématiques"
+      },
+      "irrigation": {
+        "title": "Surveillance de l'irrigation",
+        "description": "Identifier les zones sous/sur-irriguées, optimiser la consommation d'eau, rapports périodiques"
+      },
+      "scouting": {
+        "title": "Scouting et inspection",
+        "description": "Détection de maladies, parasites, lacunes de levée, évaluation des dommages, inventaire d'arbres"
+      },
+      "consulting": {
+        "title": "Conseil agronomique",
+        "description": "Interprétation des données, recommandations de fertilisation variable, stratégies d'intervention"
+      },
+      "training": {
+        "title": "Formation et transfert de savoir-faire",
+        "description": "Instruction d'équipes internes, procédures de vol, traitement d'images, interprétation de cartes"
+      }
+    },
+    "process": {
+      "title": "Comment nous travaillons",
+      "step1": {
+        "title": "Consultation initiale",
+        "description": "Discuter des objectifs, évaluer la superficie, établir la fréquence des vols"
+      },
+      "step2": {
+        "title": "Vol et acquisition de données",
+        "description": "Planification de mission, capture d'images RGB et multispectrales, conformité AACR"
+      },
+      "step3": {
+        "title": "Traitement et analyse",
+        "description": "Génération d'orthophotos, calcul d'indices de végétation, création de cartes de prescription"
+      },
+      "step4": {
+        "title": "Rapports et action",
+        "description": "Livrer des rapports interactifs, recommandations pratiques, support à la mise en œuvre"
+      }
+    },
+    "whyUs": {
+      "title": "Pourquoi InterMax",
+      "point1": "Capteurs multispectraux de dernière génération pour détection précise",
+      "point2": "Logiciel professionnel de traitement et d'analyse agronomique",
+      "point3": "Collaboration avec des agronomes certifiés pour l'interprétation des données",
+      "point4": "Flexibilité: vols à la demande ou contrats saisonniers",
+      "point5": "Rapports clairs et exploitables, adaptés au niveau d'expertise du client"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": {
+        "question": "Quelles superficies pouvez-vous couvrir?",
+        "answer": "De quelques hectares à des milliers d'hectares, selon la plateforme et le temps disponible."
+      },
+      "q2": {
+        "question": "À quelle fréquence les vols doivent-ils être effectués?",
+        "answer": "Dépend de la culture et de l'objectif: typiquement tous les 10-14 jours pour la surveillance de la végétation, ou selon les besoins pour des investigations ponctuelles."
+      },
+      "q3": {
+        "question": "Proposez-vous également des services de pulvérisation/traitement par drone?",
+        "answer": "Actuellement, nous nous concentrons sur la cartographie et l'analyse. Pour les applications phytosanitaires, nous collaborons avec des partenaires spécialisés."
+      },
+      "q4": {
+        "question": "Quels livrables vais-je recevoir?",
+        "answer": "Orthophotos géoréférencées, cartes NDVI/NDRE, rapports d'analyse, recommandations agronomiques et accès à la plateforme de visualisation en ligne."
+      },
+      "q5": {
+        "question": "Puis-je utiliser les données pour les demandes APIA?",
+        "answer": "Oui, nos orthophotos peuvent être utilisées comme documentation de support, mais vérifiez les exigences spécifiques avec votre consultant."
+      }
+    },
+    "ctaBand": {
+      "title": "Vous voulez optimiser la production agricole avec des données aériennes?",
+      "subtitle": "Demandez une démonstration sur votre terrain et voyez la différence."
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Portfolio de projets",
+      "subtitle": "Découvrez une sélection de nos projets représentatifs en construction, défense et agriculture."
+    },
+    "comingSoon": "Les études de cas détaillées seront bientôt disponibles. En attendant, contactez-nous directement pour des références et exemples de projets."
+  },
+  "about": {
+    "hero": {
+      "title": "À propos d'InterMax",
+      "subtitle": "Une équipe d'ingénieurs, techniciens et spécialistes dédiés à l'innovation et à l'excellence technique."
+    },
+    "comingSoon": "La page à propos est en cours de développement. Pour des informations sur l'entreprise, l'équipe et les valeurs, veuillez nous contacter directement."
+  },
+  "contact": {
+    "hero": {
+      "title": "Parlons-en",
+      "subtitle": "Quelle que soit l'industrie ou la taille du projet, nous sommes là pour vous aider."
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom complet",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès!",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "info": {
+      "title": "Informations de contact",
+      "address": "123 Rue Exemple, Bucarest, Roumanie",
+      "phone": "+40 XXX XXX XXX",
+      "email": "contact@intermax.ro",
+      "hours": "Lundi - Vendredi: 9h00 - 18h00"
+    }
+  },
+  "footer": {
+    "tagline": "Solutions d'ingénierie intégrées pour la construction, la défense et l'agriculture.",
+    "industries": "Divisions",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "allRightsReserved": "Tous droits réservés."
+  }
+}

@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -126,4 +124,36 @@
   html {
     @apply font-sans;
   }
+}
+
+/* Vertical-specific theming */
+.vertical-construction {
+  --primary: oklch(0.55 0.15 240); /* Slate/blue accent */
+  --primary-foreground: oklch(0.985 0 0);
+}
+
+.vertical-defense {
+  --primary: oklch(0.25 0.03 0); /* Graphite/dark */
+  --primary-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.55 0.22 20); /* Subtle red accent */
+}
+
+.vertical-agriculture {
+  --primary: oklch(0.55 0.15 145); /* Green accent */
+  --primary-foreground: oklch(0.985 0 0);
+}
+
+.dark .vertical-construction {
+  --primary: oklch(0.65 0.15 240);
+  --primary-foreground: oklch(0.145 0 0);
+}
+
+.dark .vertical-defense {
+  --primary: oklch(0.75 0.03 0);
+  --primary-foreground: oklch(0.145 0 0);
+}
+
+.dark .vertical-agriculture {
+  --primary: oklch(0.65 0.15 145);
+  --primary-foreground: oklch(0.145 0 0);
 }
