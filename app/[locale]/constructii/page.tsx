@@ -147,17 +147,17 @@ export default async function ConstructionPage({
             {
               title: "Complex rezidențial premium",
               description: "Structuri metalice și fațade ventilate pentru ansamblul rezidențial modern",
-              image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+              image: "/photos/25.png",
             },
             {
               title: "Halăindustrială modernă",
               description: "Proiectare și execuție completă pentru complex logistic de 15,000 mp",
-              image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
+              image: "/photos/26.png",
             },
             {
               title: "Centru comercial",
               description: "Compartimentări REI și porți metalice pentru centru comercial regional",
-              image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80",
+              image: "/photos/27.png",
             },
           ]}
         />
