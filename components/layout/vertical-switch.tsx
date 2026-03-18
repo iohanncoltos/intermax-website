@@ -19,6 +19,7 @@ export function VerticalSwitch() {
   };
 
   const currentVertical = getCurrentVertical();
+  const isDefensePage = pathname.includes("/defense-engineering");
 
   const handleVerticalChange = (value: string) => {
     const routes = {
@@ -30,7 +31,7 @@ export function VerticalSwitch() {
   };
 
   // Only show on vertical pages
-  if (!currentVertical) return null;
+  if (!currentVertical || isDefensePage) return null;
 
   return (
     <div className="sticky top-20 z-40 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">

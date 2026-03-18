@@ -9,7 +9,7 @@ import { HowWeWork } from "@/components/sections/how-we-work";
 import { WhyUs } from "@/components/sections/why-us";
 import { FAQ } from "@/components/sections/faq";
 import { CTABand } from "@/components/sections/cta-band";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { ProjectCards } from "@/components/sections/project-cards";
 
 export const metadata: Metadata = {
   title: "Construcții",
@@ -30,26 +30,32 @@ export default async function ConstructionPage({
     {
       title: t("capabilities.facades.title"),
       description: t("capabilities.facades.description"),
+      image: "/photos/19.png",
     },
     {
       title: t("capabilities.partitions.title"),
       description: t("capabilities.partitions.description"),
+      image: "/photos/21.png",
     },
     {
       title: t("capabilities.metalwork.title"),
       description: t("capabilities.metalwork.description"),
+      image: "/photos/20.png",
     },
     {
       title: t("capabilities.roofing.title"),
       description: t("capabilities.roofing.description"),
+      image: "/photos/22.png",
     },
     {
       title: t("capabilities.doors.title"),
       description: t("capabilities.doors.description"),
+      image: "/photos/23.png",
     },
     {
       title: t("capabilities.installation.title"),
       description: t("capabilities.installation.description"),
+      image: "/photos/24.png",
     },
   ];
 
@@ -106,7 +112,11 @@ export default async function ConstructionPage({
   return (
     <div className="vertical-construction">
       {/* Hero */}
-      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")}>
+      <Hero
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+        backgroundImage="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80"
+      >
         <Button asChild size="lg">
           <Link href={`/${locale}/contact`}>{t("hero.cta1")}</Link>
         </Button>
@@ -132,19 +142,25 @@ export default async function ConstructionPage({
 
       {/* Case Studies */}
       <Section id="projects" className="bg-muted/40" title="Proiecte reprezentative">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[1, 2, 3].map((i) => (
-            <Card key={i} className="overflow-hidden">
-              <div className="aspect-video bg-muted" />
-              <CardHeader>
-                <CardTitle>Project {i}</CardTitle>
-                <CardDescription>
-                  Construction case study - content coming soon
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          ))}
-        </div>
+        <ProjectCards
+          projects={[
+            {
+              title: "Complex rezidențial premium",
+              description: "Structuri metalice și fațade ventilate pentru ansamblul rezidențial modern",
+              image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+            },
+            {
+              title: "Halăindustrială modernă",
+              description: "Proiectare și execuție completă pentru complex logistic de 15,000 mp",
+              image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
+            },
+            {
+              title: "Centru comercial",
+              description: "Compartimentări REI și porți metalice pentru centru comercial regional",
+              image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80",
+            },
+          ]}
+        />
       </Section>
 
       {/* FAQ */}

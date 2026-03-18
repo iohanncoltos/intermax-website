@@ -6,11 +6,8 @@ import { Section } from "@/components/sections/section";
 import { VerticalCards } from "@/components/sections/vertical-cards";
 import { CapabilitiesGrid } from "@/components/sections/capabilities-grid";
 import { CTABand } from "@/components/sections/cta-band";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { ProjectCards } from "@/components/sections/project-cards";
 import {
-  Building2,
-  Shield,
-  Sprout,
   Cog,
   Wrench,
   CheckCircle,
@@ -40,6 +37,7 @@ export default async function Home({
       ],
       href: `/${locale}/constructii`,
       cta: t("common.learnMore"),
+      image: "/photos/2.png",
     },
     {
       title: t("home.verticals.defense.title"),
@@ -51,6 +49,7 @@ export default async function Home({
       ],
       href: `/${locale}/defense-engineering`,
       cta: t("common.learnMore"),
+      image: "/photos/3.png",
     },
     {
       title: t("home.verticals.agriculture.title"),
@@ -62,6 +61,7 @@ export default async function Home({
       ],
       href: `/${locale}/agricultura`,
       cta: t("common.learnMore"),
+      image: "/photos/4.png",
     },
   ];
 
@@ -101,7 +101,12 @@ export default async function Home({
   return (
     <>
       {/* Hero Section */}
-      <Hero title={t("home.hero.title")} subtitle={t("home.hero.subtitle")}>
+      <Hero
+        title={t("home.hero.title")}
+        subtitle={t("home.hero.subtitle")}
+        backgroundImage="/photos/1.png"
+        overlay={false}
+      >
         <Button asChild size="lg">
           <Link href={`#verticals`}>{t("home.hero.cta1")}</Link>
         </Button>
@@ -125,21 +130,27 @@ export default async function Home({
 
       {/* Case Studies Preview */}
       <Section title={t("home.caseStudies.title")}>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[1, 2, 3].map((i) => (
-            <Card key={i} className="overflow-hidden">
-              <div className="aspect-video bg-muted" />
-              <CardHeader>
-                <CardTitle>Project {i}</CardTitle>
-                <CardDescription>
-                  Case study placeholder - content coming soon
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          ))}
-        </div>
-        <div className="mt-8 text-center">
-          <Button asChild variant="outline">
+        <ProjectCards
+          projects={[
+            {
+              title: "Structuri și confecții metalice",
+              description: "Proiectare și construcție complexă pentru obiective industriale moderne",
+              image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
+            },
+            {
+              title: "Sisteme UAS",
+              description: "Soluții integrate pentru sisteme aeriene fără pilot și monitorizare",
+              image: "/photos/8.png",
+            },
+            {
+              title: "Tehnologii agricole",
+              description: "Sisteme inteligente pentru agricultură de precizie și monitorizare",
+              image: "/photos/9.png",
+            },
+          ]}
+        />
+        <div className="mt-12 text-center">
+          <Button asChild variant="outline" size="lg">
             <Link href={`/${locale}/portofoliu`}>
               {t("home.caseStudies.viewAll")}
             </Link>

@@ -6,7 +6,6 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
@@ -44,7 +43,6 @@ export function SiteHeader() {
   const router = useRouter();
 
   const switchLocale = (newLocale: string) => {
-    // Get the current path without the locale
     const pathWithoutLocale = pathname.replace(`/${locale}`, "");
     router.push(`/${newLocale}${pathWithoutLocale}`);
   };
@@ -55,21 +53,42 @@ export function SiteHeader() {
     fr: "FR",
   };
 
+  const isDefensePage = pathname.includes("/defense-engineering");
+  const defenseNavClass =
+    "bg-transparent text-white hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white data-open:bg-white/10 data-popup-open:bg-white/10";
+  const defenseDropdownClass =
+    "border border-white/15 bg-slate-950/95 text-slate-100 shadow-2xl ring-white/10 backdrop-blur";
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        {/* Logo */}
+    <header
+      className={cn(
+        "z-50 w-full transition-colors",
+        isDefensePage
+          ? "absolute inset-x-0 top-0"
+          : "sticky top-0 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+      )}
+    >
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href={`/${locale}`} className="flex items-center space-x-2">
-          <span className="text-2xl font-bold">InterMax</span>
+          <span
+            className={cn(
+              "text-2xl font-semibold tracking-tight",
+              isDefensePage
+                ? "text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]"
+                : "text-foreground"
+            )}
+          >
+            InterMax
+          </span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden items-center space-x-6 md:flex">
           <NavigationMenu>
             <NavigationMenuList>
-              {/* Industries Dropdown */}
               <NavigationMenuItem>
-                <NavigationMenuTrigger>
+                <NavigationMenuTrigger
+                  className={isDefensePage ? defenseNavClass : undefined}
+                >
                   {t("nav.industries")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -92,84 +111,128 @@ export function SiteHeader() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
-              {/* Other Nav Items */}
               <NavigationMenuItem>
-                <Link href={`/${locale}/portofoliu`} legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    {t("nav.portfolio")}
-                  </NavigationMenuLink>
+                <Link
+                  href={`/${locale}/portofoliu`}
+                  className={
+                    isDefensePage
+                      ? cn(navigationMenuTriggerStyle(), defenseNavClass)
+                      : navigationMenuTriggerStyle()
+                  }
+                >
+                  {t("nav.portfolio")}
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href={`/${locale}/despre`} legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    {t("nav.about")}
-                  </NavigationMenuLink>
+                <Link
+                  href={`/${locale}/despre`}
+                  className={
+                    isDefensePage
+                      ? cn(navigationMenuTriggerStyle(), defenseNavClass)
+                      : navigationMenuTriggerStyle()
+                  }
+                >
+                  {t("nav.about")}
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href={`/${locale}/contact`} legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    {t("nav.contact")}
-                  </NavigationMenuLink>
+                <Link
+                  href={`/${locale}/contact`}
+                  className={
+                    isDefensePage
+                      ? cn(navigationMenuTriggerStyle(), defenseNavClass)
+                      : navigationMenuTriggerStyle()
+                  }
+                >
+                  {t("nav.contact")}
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Language Switcher */}
           <DropdownMenu>
-            <DropdownMenuTrigger>
-              <Button variant="ghost" size="sm" className="gap-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              className={cn(
+                "gap-2",
+                isDefensePage && "text-white hover:bg-white/10 hover:text-white"
+              )}
+              asChild
+            >
+              <DropdownMenuTrigger>
                 <Globe className="h-4 w-4" />
                 {localeNames[locale]}
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+              </DropdownMenuTrigger>
+            </Button>
+            <DropdownMenuContent
+              align="end"
+              className={isDefensePage ? defenseDropdownClass : undefined}
+            >
               <DropdownMenuItem onClick={() => switchLocale("ro")}>
-                Română (RO)
+                Romana (RO)
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => switchLocale("en")}>
                 English (EN)
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => switchLocale("fr")}>
-                Français (FR)
+                Francais (FR)
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </nav>
 
-        {/* Mobile Menu */}
-        <div className="flex md:hidden items-center gap-2">
+        <div className="flex items-center gap-2 md:hidden">
           <DropdownMenu>
-            <DropdownMenuTrigger>
-              <Button variant="ghost" size="sm" className="gap-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              className={cn(
+                "gap-2",
+                isDefensePage && "text-white hover:bg-white/10 hover:text-white"
+              )}
+              asChild
+            >
+              <DropdownMenuTrigger>
                 <Globe className="h-4 w-4" />
                 {localeNames[locale]}
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+              </DropdownMenuTrigger>
+            </Button>
+            <DropdownMenuContent
+              align="end"
+              className={isDefensePage ? defenseDropdownClass : undefined}
+            >
               <DropdownMenuItem onClick={() => switchLocale("ro")}>
-                Română (RO)
+                Romana (RO)
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => switchLocale("en")}>
                 English (EN)
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => switchLocale("fr")}>
-                Français (FR)
+                Francais (FR)
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
           <DropdownMenu>
-            <DropdownMenuTrigger>
-              <Button variant="ghost" size="icon">
+            <Button
+              variant="ghost"
+              size="icon"
+              className={cn(
+                isDefensePage && "text-white hover:bg-white/10 hover:text-white"
+              )}
+              asChild
+            >
+              <DropdownMenuTrigger>
                 <Menu className="h-5 w-5" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-48">
+              </DropdownMenuTrigger>
+            </Button>
+            <DropdownMenuContent
+              align="end"
+              className={cn("w-48", isDefensePage && defenseDropdownClass)}
+            >
               <DropdownMenuItem>
                 <Link href={`/${locale}/constructii`} className="w-full">
                   {t("nav.construction")}

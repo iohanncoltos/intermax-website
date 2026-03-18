@@ -9,7 +9,7 @@ import { HowWeWork } from "@/components/sections/how-we-work";
 import { WhyUs } from "@/components/sections/why-us";
 import { FAQ } from "@/components/sections/faq";
 import { CTABand } from "@/components/sections/cta-band";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { ProjectCards } from "@/components/sections/project-cards";
 
 export const metadata: Metadata = {
   title: "Servicii în agricultură",
@@ -30,26 +30,32 @@ export default async function AgriculturePage({
     {
       title: t("capabilities.mapping.title"),
       description: t("capabilities.mapping.description"),
+      image: "/photos/10.png",
     },
     {
       title: t("capabilities.ndvi.title"),
       description: t("capabilities.ndvi.description"),
+      image: "/photos/11.png",
     },
     {
       title: t("capabilities.irrigation.title"),
       description: t("capabilities.irrigation.description"),
+      image: "/photos/12.png",
     },
     {
       title: t("capabilities.scouting.title"),
       description: t("capabilities.scouting.description"),
+      image: "/photos/13.png",
     },
     {
       title: t("capabilities.consulting.title"),
       description: t("capabilities.consulting.description"),
+      image: "/photos/14.png",
     },
     {
       title: t("capabilities.training.title"),
       description: t("capabilities.training.description"),
+      image: "/photos/15.png",
     },
   ];
 
@@ -106,7 +112,11 @@ export default async function AgriculturePage({
   return (
     <div className="vertical-agriculture">
       {/* Hero */}
-      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")}>
+      <Hero
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+        backgroundImage="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&q=80"
+      >
         <Button asChild size="lg">
           <Link href={`/${locale}/contact`}>{t("hero.cta1")}</Link>
         </Button>
@@ -132,19 +142,25 @@ export default async function AgriculturePage({
 
       {/* Case Studies */}
       <Section id="case-studies" className="bg-muted/40" title="Case Studies">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[1, 2, 3].map((i) => (
-            <Card key={i} className="overflow-hidden">
-              <div className="aspect-video bg-muted" />
-              <CardHeader>
-                <CardTitle>Project {i}</CardTitle>
-                <CardDescription>
-                  Agriculture case study - content coming soon
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          ))}
-        </div>
+        <ProjectCards
+          projects={[
+            {
+              title: "Agricultură de precizie - 500 ha",
+              description: "Implementare sistem complet de monitorizare și optimizare cultură cerealieră",
+              image: "/photos/16.png",
+            },
+            {
+              title: "Monitorizare pășuni",
+              description: "Sistem NDVI pentru optimizarea managementului pășunilor și furajelor",
+              image: "/photos/17.png",
+            },
+            {
+              title: "Optimizare irigații",
+              description: "Analiză multspectrală pentru management eficient al resurselor de apă",
+              image: "/photos/18.png",
+            },
+          ]}
+        />
       </Section>
 
       {/* FAQ */}
