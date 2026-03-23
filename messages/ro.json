@@ -39,7 +39,7 @@
       "agriculture": {
         "title": "Servicii în agricultură",
         "description": "Tehnologii moderne pentru agricultură de precizie și monitorizare aeriana.",
-        "bullets": ["Cartografiere și analiză multispect rală", "Monitorizare cultură și irigații", "Consultanță agronomică digitală"]
+        "bullets": ["Cartografiere și analiză multispectrală", "Monitorizare cultură și irigații", "Consultanță agronomică digitală"]
       }
     },
     "competencies": {
@@ -294,7 +294,7 @@
   "agriculture": {
     "hero": {
       "title": "Agricultură de precizie prin tehnologie aeriană",
-      "subtitle": "Cartografiere multispect rală, monitorizare cultură, analiză vegetație și consultanță agronomică bazată pe date.",
+      "subtitle": "Cartografiere multispectrală, monitorizare cultură, analiză vegetație și consultanță agronomică bazată pe date.",
       "cta1": "Solicită demo",
       "cta2": "Vezi studii de caz"
     },
@@ -305,7 +305,7 @@
         "description": "Imagini de înaltă rezoluție, modele 3D ale terenului, delimităre precisă parcele"
       },
       "ndvi": {
-        "title": "Analiză multispect rală (NDVI, NDRE)",
+        "title": "Analiză multispectrală (NDVI, NDRE)",
         "description": "Detecție timpurie a stresului vegetal, evaluare vigoare cultură, hartare zone problematice"
       },
       "irrigation": {
@@ -346,7 +346,7 @@
     },
     "whyUs": {
       "title": "De ce InterMax",
-      "point1": "Senzori multispect rali de ultimă generație pentru detectie prec isă",
+      "point1": "Senzori multispectrali de ultimă generație pentru detecție precisă",
       "point2": "Software profesional de procesare și analiză agronomică",
       "point3": "Colaborare cu ingineri agronomi certificați pentru interpretare date",
       "point4": "Flexibilitate: zbor la cerere sau contracte sezoniere",
@@ -380,7 +380,7 @@
         "answer": "Depinde de cultură și obiectiv: de obicei la 10-14 zile pentru monitorizare vegetație, sau la nevoie pentru investigații punctuale."
       },
       "q3": {
-        "question": "Oferit i și servicii de tratament/pulverizare cu drona?",
+        "question": "Oferiți și servicii de tratament/pulverizare cu drona?",
         "answer": "Momentan ne concentrăm pe cartografiere și analiză. Pentru aplicații fitosanitare, colaborăm cu parteneri specializați."
       },
       "q4": {
@@ -515,9 +515,9 @@
     },
     "info": {
       "title": "Informații de contact",
-      "address": "Str. Exemplu nr. 123, București, România",
-      "phone": "+40 XXX XXX XXX",
-      "email": "contact@intermax.ro",
+      "address": "Str. Pitesti 44, Slatina, Romania",
+      "phone": "+0740409172",
+      "email": "contact@inter-max.ro",
       "hours": "Luni - Vineri: 9:00 - 18:00"
     }
   },

@@ -18,8 +18,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { Globe, Menu } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
+import { SiteLogo } from "@/components/layout/site-logo";
 
 const verticals = [
   {
@@ -53,42 +53,20 @@ export function SiteHeader() {
     fr: "FR",
   };
 
-  const isDefensePage = pathname.includes("/defense-engineering");
-  const defenseNavClass =
-    "bg-transparent text-white hover:bg-white/10 hover:text-white focus:bg-white/10 focus:text-white data-open:bg-white/10 data-popup-open:bg-white/10";
-  const defenseDropdownClass =
-    "border border-white/15 bg-slate-950/95 text-slate-100 shadow-2xl ring-white/10 backdrop-blur";
-
   return (
     <header
-      className={cn(
-        "z-50 w-full transition-colors",
-        isDefensePage
-          ? "absolute inset-x-0 top-0"
-          : "sticky top-0 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
-      )}
+      className="sticky top-0 z-50 w-full border-b bg-background/95 transition-colors backdrop-blur supports-[backdrop-filter]:bg-background/60"
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <Link href={`/${locale}`} className="flex items-center space-x-2">
-          <span
-            className={cn(
-              "text-2xl font-semibold tracking-tight",
-              isDefensePage
-                ? "text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]"
-                : "text-foreground"
-            )}
-          >
-            InterMax
-          </span>
+        <Link href={`/${locale}`} className="flex items-center">
+          <SiteLogo />
         </Link>
 
         <nav className="hidden items-center space-x-6 md:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger
-                  className={isDefensePage ? defenseNavClass : undefined}
-                >
+                <NavigationMenuTrigger>
                   {t("nav.industries")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -114,11 +92,7 @@ export function SiteHeader() {
               <NavigationMenuItem>
                 <Link
                   href={`/${locale}/portofoliu`}
-                  className={
-                    isDefensePage
-                      ? cn(navigationMenuTriggerStyle(), defenseNavClass)
-                      : navigationMenuTriggerStyle()
-                  }
+                  className={navigationMenuTriggerStyle()}
                 >
                   {t("nav.portfolio")}
                 </Link>
@@ -127,11 +101,7 @@ export function SiteHeader() {
               <NavigationMenuItem>
                 <Link
                   href={`/${locale}/despre`}
-                  className={
-                    isDefensePage
-                      ? cn(navigationMenuTriggerStyle(), defenseNavClass)
-                      : navigationMenuTriggerStyle()
-                  }
+                  className={navigationMenuTriggerStyle()}
                 >
                   {t("nav.about")}
                 </Link>
@@ -140,11 +110,7 @@ export function SiteHeader() {
               <NavigationMenuItem>
                 <Link
                   href={`/${locale}/contact`}
-                  className={
-                    isDefensePage
-                      ? cn(navigationMenuTriggerStyle(), defenseNavClass)
-                      : navigationMenuTriggerStyle()
-                  }
+                  className={navigationMenuTriggerStyle()}
                 >
                   {t("nav.contact")}
                 </Link>
@@ -156,10 +122,7 @@ export function SiteHeader() {
             <Button
               variant="ghost"
               size="sm"
-              className={cn(
-                "gap-2",
-                isDefensePage && "text-white hover:bg-white/10 hover:text-white"
-              )}
+              className="gap-2"
               asChild
             >
               <DropdownMenuTrigger>
@@ -167,10 +130,7 @@ export function SiteHeader() {
                 {localeNames[locale]}
               </DropdownMenuTrigger>
             </Button>
-            <DropdownMenuContent
-              align="end"
-              className={isDefensePage ? defenseDropdownClass : undefined}
-            >
+            <DropdownMenuContent align="end">
               <DropdownMenuItem onClick={() => switchLocale("ro")}>
                 Romana (RO)
               </DropdownMenuItem>
@@ -189,10 +149,7 @@ export function SiteHeader() {
             <Button
               variant="ghost"
               size="sm"
-              className={cn(
-                "gap-2",
-                isDefensePage && "text-white hover:bg-white/10 hover:text-white"
-              )}
+              className="gap-2"
               asChild
             >
               <DropdownMenuTrigger>
@@ -200,10 +157,7 @@ export function SiteHeader() {
                 {localeNames[locale]}
               </DropdownMenuTrigger>
             </Button>
-            <DropdownMenuContent
-              align="end"
-              className={isDefensePage ? defenseDropdownClass : undefined}
-            >
+            <DropdownMenuContent align="end">
               <DropdownMenuItem onClick={() => switchLocale("ro")}>
                 Romana (RO)
               </DropdownMenuItem>
@@ -220,19 +174,13 @@ export function SiteHeader() {
             <Button
               variant="ghost"
               size="icon"
-              className={cn(
-                isDefensePage && "text-white hover:bg-white/10 hover:text-white"
-              )}
               asChild
             >
               <DropdownMenuTrigger>
                 <Menu className="h-5 w-5" />
               </DropdownMenuTrigger>
             </Button>
-            <DropdownMenuContent
-              align="end"
-              className={cn("w-48", isDefensePage && defenseDropdownClass)}
-            >
+            <DropdownMenuContent align="end" className="w-48">
               <DropdownMenuItem>
                 <Link href={`/${locale}/constructii`} className="w-full">
                   {t("nav.construction")}

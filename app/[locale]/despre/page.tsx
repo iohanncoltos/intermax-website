@@ -89,7 +89,7 @@ export default async function AboutPage({
       title: t("divisions.agriculture.title"),
       description: t("divisions.agriculture.description"),
       href: `/${locale}/agricultura`,
-      image: "/photos/4.png",
+      image: "/photos/image.png",
       icon: <Sprout className="h-5 w-5" />,
     },
   ];

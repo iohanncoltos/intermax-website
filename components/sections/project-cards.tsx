@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { motion } from "framer-motion";
@@ -9,27 +8,26 @@ import { ArrowRight } from "lucide-react";
 interface ProjectCardProps {
   title: string;
   description: string;
-  image: string;
   href?: string;
+  index?: number;
 }
 
-export function ProjectCard({ title, description, image, href }: ProjectCardProps) {
+export function ProjectCard({ title, description, href, index }: ProjectCardProps) {
   const content = (
-    <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300 h-full">
-      <div className="relative aspect-[4/3] overflow-hidden">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </div>
-      <CardHeader>
-        <CardTitle className="text-xl group-hover:text-primary transition-colors">
+    <Card className="group h-full rounded-[28px] border-foreground/10 bg-background/95 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+      <CardHeader className="flex h-full flex-col p-6 sm:p-7">
+        <div className="mb-5 flex items-center justify-between">
+          <span className="text-sm font-semibold tracking-[0.18em] text-primary/70">
+            {String((index ?? 0) + 1).padStart(2, "0")}
+          </span>
+          <ArrowRight className="h-4 w-4 text-primary/70 transition-transform duration-300 group-hover:translate-x-1" />
+        </div>
+        <CardTitle className="text-xl leading-snug transition-colors group-hover:text-primary">
           {title}
         </CardTitle>
-        <CardDescription className="line-clamp-2">{description}</CardDescription>
+        <CardDescription className="mt-3 line-clamp-none text-base leading-7">
+          {description}
+        </CardDescription>
       </CardHeader>
     </Card>
   );
@@ -69,7 +67,7 @@ export function ProjectCards({ projects }: ProjectCardsProps) {
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {projects.map((project, index) => (
-        <ProjectCard key={index} {...project} />
+        <ProjectCard key={index} {...project} index={index} />
       ))}
     </div>
   );

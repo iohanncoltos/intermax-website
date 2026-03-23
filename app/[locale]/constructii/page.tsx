@@ -1,15 +1,29 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import type { Metadata } from "next";
+import {
+  ArrowRight,
+  Building2,
+  Hammer,
+  House,
+  ShieldCheck,
+  Wrench,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Hero } from "@/components/sections/hero";
+import { Badge } from "@/components/ui/badge";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Section } from "@/components/sections/section";
 import { CapabilitiesGrid } from "@/components/sections/capabilities-grid";
 import { HowWeWork } from "@/components/sections/how-we-work";
 import { WhyUs } from "@/components/sections/why-us";
 import { FAQ } from "@/components/sections/faq";
 import { CTABand } from "@/components/sections/cta-band";
-import { ProjectCards } from "@/components/sections/project-cards";
 
 export const metadata: Metadata = {
   title: "Construcții",
@@ -30,32 +44,27 @@ export default async function ConstructionPage({
     {
       title: t("capabilities.facades.title"),
       description: t("capabilities.facades.description"),
-      image: "/photos/19.png",
+      icon: <Building2 className="h-8 w-8 text-primary" />,
     },
     {
       title: t("capabilities.partitions.title"),
       description: t("capabilities.partitions.description"),
-      image: "/photos/21.png",
+      icon: <ShieldCheck className="h-8 w-8 text-primary" />,
     },
     {
       title: t("capabilities.metalwork.title"),
       description: t("capabilities.metalwork.description"),
-      image: "/photos/20.png",
+      icon: <Wrench className="h-8 w-8 text-primary" />,
     },
     {
       title: t("capabilities.roofing.title"),
       description: t("capabilities.roofing.description"),
-      image: "/photos/22.png",
-    },
-    {
-      title: t("capabilities.doors.title"),
-      description: t("capabilities.doors.description"),
-      image: "/photos/23.png",
+      icon: <House className="h-8 w-8 text-primary" />,
     },
     {
       title: t("capabilities.installation.title"),
       description: t("capabilities.installation.description"),
-      image: "/photos/24.png",
+      icon: <Hammer className="h-8 w-8 text-primary" />,
     },
   ];
 
@@ -109,66 +118,160 @@ export default async function ConstructionPage({
     },
   ];
 
-  return (
-    <div className="vertical-construction">
-      {/* Hero */}
-      <Hero
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-        backgroundImage="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80"
-      >
-        <Button asChild size="lg">
-          <Link href={`/${locale}/contact`}>{t("hero.cta1")}</Link>
-        </Button>
-        <Button asChild variant="outline" size="lg">
-          <Link href={`#projects`}>{t("hero.cta2")}</Link>
-        </Button>
-      </Hero>
+  const projects = [
+    {
+      title: t("caseStudies.projects.0.title"),
+      description: t("caseStudies.projects.0.description"),
+    },
+    {
+      title: t("caseStudies.projects.1.title"),
+      description: t("caseStudies.projects.1.description"),
+    },
+    {
+      title: t("caseStudies.projects.2.title"),
+      description: t("caseStudies.projects.2.description"),
+    },
+  ];
 
-      {/* Capabilities */}
-      <Section title={t("capabilities.title")}>
+  return (
+    <div className="vertical-construction relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[520px] bg-[radial-gradient(circle_at_top_left,_rgba(56,95,158,0.16),_transparent_55%),radial-gradient(circle_at_top_right,_rgba(56,95,158,0.08),_transparent_40%)]" />
+      <div className="pointer-events-none absolute right-[-8rem] top-24 -z-10 hidden h-72 w-72 rounded-full bg-primary/10 blur-3xl lg:block" />
+
+      <section className="pb-8 pt-8 md:pb-10 md:pt-12">
+        <div className="container mx-auto px-4">
+          <div className="grid overflow-hidden rounded-[32px] border bg-card shadow-[0_24px_80px_-42px_rgba(15,23,42,0.35)] lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="p-8 sm:p-10 lg:p-12">
+              <Badge
+                variant="outline"
+                className="mb-5 px-3 py-1 text-[0.68rem] uppercase tracking-[0.18em]"
+              >
+                InterMax
+              </Badge>
+
+              <h1 className="max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+                {t("hero.title")}
+              </h1>
+              <p className="mt-4 max-w-2xl text-lg leading-8 text-muted-foreground">
+                {t("hero.subtitle")}
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Button asChild size="lg">
+                  <Link href={`/${locale}/contact`}>{t("hero.cta1")}</Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link href="#projects">{t("hero.cta2")}</Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="border-t bg-muted/25 p-6 sm:p-8 lg:border-l lg:border-t-0 lg:p-10">
+              <div className="grid gap-3 sm:grid-cols-2">
+                {capabilities.map((capability, index) => (
+                  <Card
+                    key={capability.title}
+                    className="border-primary/10 bg-background/88 shadow-sm"
+                  >
+                    <CardHeader>
+                      <div className="mb-4 flex items-center justify-between">
+                        <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/10">
+                          {capability.icon}
+                        </div>
+                        <span className="text-xs font-medium text-primary/70">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <CardTitle className="text-lg leading-snug">
+                        {capability.title}
+                      </CardTitle>
+                    </CardHeader>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Section
+        className="bg-muted/35"
+        title={t("capabilities.title")}
+      >
         <CapabilitiesGrid capabilities={capabilities} columns={3} />
       </Section>
 
-      {/* How We Work */}
-      <Section className="bg-muted/40" title={t("process.title")}>
-        <HowWeWork steps={steps} />
-      </Section>
+      <section className="py-8 md:py-10">
+        <div className="container mx-auto px-4">
+          <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
+            <Card className="rounded-[32px] border bg-card p-6 shadow-sm sm:p-8 lg:p-10">
+              <CardHeader className="px-0 pb-8">
+                <CardTitle className="text-3xl tracking-tight sm:text-4xl">
+                  {t("process.title")}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="px-0">
+                <HowWeWork steps={steps} />
+              </CardContent>
+            </Card>
 
-      {/* Why Us */}
-      <Section title={t("whyUs.title")}>
-        <WhyUs points={whyUsPoints} />
-      </Section>
+            <Card className="rounded-[32px] border bg-primary/5 p-6 shadow-sm sm:p-8 lg:p-10">
+              <CardHeader className="px-0 pb-8">
+                <CardTitle className="text-3xl tracking-tight sm:text-4xl">
+                  {t("whyUs.title")}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="px-0">
+                <WhyUs points={whyUsPoints} />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
-      {/* Case Studies */}
-      <Section id="projects" className="bg-muted/40" title={t("caseStudies.title")}>
-        <ProjectCards
-          projects={[
-            {
-              title: t("caseStudies.projects.0.title"),
-              description: t("caseStudies.projects.0.description"),
-              image: "/photos/25.png",
-            },
-            {
-              title: t("caseStudies.projects.1.title"),
-              description: t("caseStudies.projects.1.description"),
-              image: "/photos/26.png",
-            },
-            {
-              title: t("caseStudies.projects.2.title"),
-              description: t("caseStudies.projects.2.description"),
-              image: "/photos/27.png",
-            },
-          ]}
-        />
-      </Section>
+      <section id="projects" className="py-8 md:py-10">
+        <div className="container mx-auto px-4">
+          <div className="rounded-[32px] border bg-muted/35 p-6 sm:p-8 lg:p-10">
+            <div className="mb-8 max-w-3xl">
+              <Badge variant="outline" className="mb-4">
+                InterMax
+              </Badge>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                {t("caseStudies.title")}
+              </h2>
+            </div>
 
-      {/* FAQ */}
+            <div className="grid gap-5 lg:grid-cols-3">
+              {projects.map((project, index) => (
+                <Card
+                  key={project.title}
+                  className="h-full border-foreground/8 bg-background/92 shadow-sm"
+                >
+                  <CardHeader>
+                    <div className="mb-4 flex items-center justify-between">
+                      <span className="text-sm font-semibold tracking-[0.18em] text-primary/70">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <ArrowRight className="h-4 w-4 text-primary/70" />
+                    </div>
+                    <CardTitle className="text-xl leading-snug">
+                      {project.title}
+                    </CardTitle>
+                    <CardDescription className="line-clamp-none leading-6">
+                      {project.description}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Section title={t("faq.title")}>
         <FAQ items={faqItems} />
       </Section>
 
-      {/* CTA */}
       <CTABand title={t("ctaBand.title")} subtitle={t("ctaBand.subtitle")}>
         <Button asChild size="lg" variant="secondary">
           <Link href={`/${locale}/contact`}>{tCommon("contactUs")}</Link>

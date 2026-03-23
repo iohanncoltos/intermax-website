@@ -61,7 +61,7 @@ export default async function Home({
       ],
       href: `/${locale}/agricultura`,
       cta: t("common.learnMore"),
-      image: "/photos/4.png",
+      image: "/photos/image.png",
     },
   ];
 
@@ -135,17 +135,14 @@ export default async function Home({
             {
               title: t("home.caseStudies.projects.0.title"),
               description: t("home.caseStudies.projects.0.description"),
-              image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
             },
             {
               title: t("home.caseStudies.projects.1.title"),
               description: t("home.caseStudies.projects.1.description"),
-              image: "/photos/8.png",
             },
             {
               title: t("home.caseStudies.projects.2.title"),
               description: t("home.caseStudies.projects.2.description"),
-              image: "/photos/9.png",
             },
           ]}
         />
