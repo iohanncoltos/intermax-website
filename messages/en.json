@@ -39,7 +39,7 @@
       "agriculture": {
         "title": "Agricultural services",
         "description": "Modern technologies for precision agriculture and aerial monitoring.",
-        "bullets": ["Mapping & multispectral analysis", "Crop & irrigation monitoring", "Digital agronomic consulting"]
+        "bullets": ["Mapping & multispectral analysis", "Crop & irrigation monitoring", "Drone treatments and precision spraying"]
       }
     },
     "competencies": {
@@ -294,7 +294,7 @@
   "agriculture": {
     "hero": {
       "title": "Precision agriculture through aerial technology",
-      "subtitle": "Multispectral mapping, crop monitoring, vegetation analysis, and data-driven agronomic consulting.",
+      "subtitle": "Multispectral mapping, crop monitoring, vegetation analysis, and drone treatments for fast, precise field intervention.",
       "cta1": "Request demo",
       "cta2": "View case studies"
     },
@@ -317,8 +317,8 @@
         "description": "Disease detection, pests, emergence gaps, damage assessment, tree inventory"
       },
       "consulting": {
-        "title": "Agronomic consulting",
-        "description": "Data interpretation, variable fertilization recommendations, intervention strategies"
+        "title": "Drone treatments",
+        "description": "Precision spraying for phytosanitary treatments, foliar fertilization, and rapid field interventions"
       },
       "training": {
         "title": "Training & know-how transfer",
@@ -381,7 +381,7 @@
       },
       "q3": {
         "question": "Do you also offer drone spraying/treatment services?",
-        "answer": "Currently we focus on mapping and analysis. For phytosanitary applications, we collaborate with specialized partners."
+        "answer": "Yes. We provide drone treatment and spraying services, including phytosanitary applications and foliar fertilization, depending on the crop, field area, and operating conditions."
       },
       "q4": {
         "question": "What deliverables do I receive?",

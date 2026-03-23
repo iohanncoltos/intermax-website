@@ -39,7 +39,7 @@
       "agriculture": {
         "title": "Servicii în agricultură",
         "description": "Tehnologii moderne pentru agricultură de precizie și monitorizare aeriana.",
-        "bullets": ["Cartografiere și analiză multispectrală", "Monitorizare cultură și irigații", "Consultanță agronomică digitală"]
+        "bullets": ["Cartografiere și analiză multispectrală", "Monitorizare cultură și irigații", "Tratamente cu drone și pulverizare de precizie"]
       }
     },
     "competencies": {
@@ -294,7 +294,7 @@
   "agriculture": {
     "hero": {
       "title": "Agricultură de precizie prin tehnologie aeriană",
-      "subtitle": "Cartografiere multispectrală, monitorizare cultură, analiză vegetație și consultanță agronomică bazată pe date.",
+      "subtitle": "Cartografiere multispectrală, monitorizare cultură, analiză vegetație și tratamente cu drone pentru intervenții rapide și precise.",
       "cta1": "Solicită demo",
       "cta2": "Vezi studii de caz"
     },
@@ -317,8 +317,8 @@
         "description": "Detectare boli, dăunători, lipsuri răsărit, evaluare daune, inventariere arbori"
       },
       "consulting": {
-        "title": "Consultanță agronomică",
-        "description": "Interpretare date, recomandări fertilizare variabilă, strategii de intervenție"
+        "title": "Tratamente cu drone",
+        "description": "Pulverizare de precizie pentru tratamente fitosanitare, fertilizare foliară și intervenții rapide în teren"
       },
       "training": {
         "title": "Training și transfer know-how",
@@ -381,7 +381,7 @@
       },
       "q3": {
         "question": "Oferiți și servicii de tratament/pulverizare cu drona?",
-        "answer": "Momentan ne concentrăm pe cartografiere și analiză. Pentru aplicații fitosanitare, colaborăm cu parteneri specializați."
+        "answer": "Da. Oferim servicii de tratament și pulverizare cu drona, inclusiv pentru aplicații fitosanitare și fertilizare foliară, în funcție de cultură, suprafață și condițiile de operare."
       },
       "q4": {
         "question": "Ce livrabile primesc?",

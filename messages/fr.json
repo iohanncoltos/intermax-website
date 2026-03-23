@@ -39,7 +39,7 @@
       "agriculture": {
         "title": "Services agricoles",
         "description": "Technologies modernes pour l'agriculture de précision et la surveillance aérienne.",
-        "bullets": ["Cartographie et analyse multispectrale", "Surveillance des cultures et irrigations", "Conseil agronomique numérique"]
+        "bullets": ["Cartographie et analyse multispectrale", "Surveillance des cultures et irrigations", "Traitements par drone et pulvérisation de précision"]
       }
     },
     "competencies": {
@@ -294,7 +294,7 @@
   "agriculture": {
     "hero": {
       "title": "Agriculture de précision par technologie aérienne",
-      "subtitle": "Cartographie multispectrale, surveillance des cultures, analyse de végétation et conseil agronomique basé sur les données.",
+      "subtitle": "Cartographie multispectrale, surveillance des cultures, analyse de végétation et traitements par drone pour des interventions rapides et précises.",
       "cta1": "Demander une démo",
       "cta2": "Voir les études de cas"
     },
@@ -317,8 +317,8 @@
         "description": "Détection de maladies, parasites, lacunes de levée, évaluation des dommages, inventaire d'arbres"
       },
       "consulting": {
-        "title": "Conseil agronomique",
-        "description": "Interprétation des données, recommandations de fertilisation variable, stratégies d'intervention"
+        "title": "Traitements par drone",
+        "description": "Pulvérisation de précision pour traitements phytosanitaires, fertilisation foliaire et interventions rapides sur le terrain"
       },
       "training": {
         "title": "Formation et transfert de savoir-faire",
@@ -381,7 +381,7 @@
       },
       "q3": {
         "question": "Proposez-vous également des services de pulvérisation/traitement par drone?",
-        "answer": "Actuellement, nous nous concentrons sur la cartographie et l'analyse. Pour les applications phytosanitaires, nous collaborons avec des partenaires spécialisés."
+        "answer": "Oui. Nous proposons des services de traitement et de pulvérisation par drone, y compris pour les applications phytosanitaires et la fertilisation foliaire, selon la culture, la surface et les conditions d'exploitation."
       },
       "q4": {
         "question": "Quels livrables vais-je recevoir?",

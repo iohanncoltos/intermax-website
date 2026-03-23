@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import {
   ArrowRight,
   BarChart3,
+  Drone,
   Droplets,
   GraduationCap,
-  Leaf,
   Map,
   Search,
 } from "lucide-react";
@@ -65,7 +65,7 @@ export default async function AgriculturePage({
     {
       title: t("capabilities.consulting.title"),
       description: t("capabilities.consulting.description"),
-      icon: <Leaf className="h-8 w-8 text-primary" />,
+      icon: <Drone className="h-8 w-8 text-primary" />,
     },
     {
       title: t("capabilities.training.title"),
