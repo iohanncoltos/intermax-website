@@ -71,7 +71,21 @@
     },
     "caseStudies": {
       "title": "Featured projects",
-      "viewAll": "View all projects"
+      "viewAll": "View all projects",
+      "projects": [
+        {
+          "title": "Steel structures and metal fabrication",
+          "description": "Complex design and construction for modern industrial facilities"
+        },
+        {
+          "title": "UAS systems",
+          "description": "Integrated solutions for unmanned aerial systems and monitoring"
+        },
+        {
+          "title": "Agricultural technologies",
+          "description": "Smart systems for precision agriculture and monitoring"
+        }
+      ]
     },
     "compliance": {
       "title": "Quality & compliance",
@@ -142,6 +156,23 @@
       "point3": "Certified and insured installation teams",
       "point4": "Direct partnerships with European premium system manufacturers",
       "point5": "Extended warranties and rapid post-installation service"
+    },
+    "caseStudies": {
+      "title": "Featured projects",
+      "projects": [
+        {
+          "title": "Premium residential complex",
+          "description": "Metal structures and ventilated facades for a modern residential development"
+        },
+        {
+          "title": "Modern industrial hall",
+          "description": "Complete design and execution for a 15,000 sqm logistics complex"
+        },
+        {
+          "title": "Shopping center",
+          "description": "Fire-rated partitions and metal gates for a regional commercial center"
+        }
+      ]
     },
     "faq": {
       "title": "Frequently asked questions",
@@ -321,6 +352,23 @@
       "point4": "Flexibility: on-demand flights or seasonal contracts",
       "point5": "Clear, actionable reports adapted to client expertise level"
     },
+    "caseStudies": {
+      "title": "Case studies",
+      "projects": [
+        {
+          "title": "Precision agriculture - 500 ha",
+          "description": "Full monitoring and optimization system implemented for a cereal crop operation"
+        },
+        {
+          "title": "Pasture monitoring",
+          "description": "NDVI-based system for optimizing pasture and forage management"
+        },
+        {
+          "title": "Irrigation optimization",
+          "description": "Multispectral analysis for efficient water resource management"
+        }
+      ]
+    },
     "faq": {
       "title": "Frequently asked questions",
       "q1": {
@@ -358,10 +406,97 @@
   },
   "about": {
     "hero": {
-      "title": "About InterMax",
-      "subtitle": "A team of engineers, technicians, and specialists dedicated to innovation and technical excellence."
+      "title": "Applied engineering for projects that demand rigor",
+      "subtitle": "InterMax brings together expertise in construction, defense engineering, and agricultural services for projects where technical clarity, controlled execution, and post-delivery support matter."
     },
-    "comingSoon": "The about page is under development. For information about the company, team, and values, please contact us directly."
+    "intro": {
+      "title": "Who we are",
+      "subtitle": "A technical company focused on delivery, not generic promises.",
+      "paragraph1": "InterMax is a team of engineers, technicians, and specialists working at the intersection of design, integration, and execution. We build solutions adapted to real operating conditions, whether the project involves technical buildings, security and defense systems, or agricultural operations supported by aerial technologies.",
+      "paragraph2": "Our approach stays consistent across all three divisions: we understand the requirement, define the technical solution, coordinate implementation, and stay involved through commissioning and support. We care about projects that are well executed, predictable, and sustainable over the long term."
+    },
+    "snapshot": {
+      "title": "InterMax at a glance",
+      "description": "We apply the same technical discipline regardless of industry.",
+      "items": [
+        "Three specialized divisions under one operational structure",
+        "Design, integration, execution, and support in one coherent flow",
+        "Clear communication with industrial, institutional, and private clients"
+      ]
+    },
+    "pillars": {
+      "title": "What defines us",
+      "subtitle": "The principles behind the way we work.",
+      "items": [
+        {
+          "title": "Multi-domain expertise",
+          "description": "We combine construction, technical systems, and applied technology capabilities to solve complex projects."
+        },
+        {
+          "title": "From concept to delivery",
+          "description": "We do not stop at recommendations. We follow the solution through implementation, testing, and handover."
+        },
+        {
+          "title": "Predictable collaboration",
+          "description": "Clear communication, realistic planning, and careful coordination with every party involved."
+        },
+        {
+          "title": "Quality and compliance",
+          "description": "We work with clear standards, execution control, and constant attention to industry-specific requirements."
+        }
+      ]
+    },
+    "divisions": {
+      "title": "The three InterMax divisions",
+      "subtitle": "Each division addresses a different type of need, but all of them use the same project logic: rigor, integration, and accountability.",
+      "construction": {
+        "title": "Construction",
+        "description": "Technical systems for buildings and special facilities: facades, fire-rated partitions, metal structures, gates, and specialized execution works."
+      },
+      "defense": {
+        "title": "Defense Engineering",
+        "description": "Integrated solutions for security, surveillance, and unmanned aerial systems, adapted to operational requirements and existing infrastructures."
+      },
+      "agriculture": {
+        "title": "Agricultural services",
+        "description": "Mapping, multispectral analysis, and aerial monitoring for better decision-making in precision agriculture."
+      }
+    },
+    "process": {
+      "title": "How we work",
+      "subtitle": "A simple framework, adapted to each project but followed consistently.",
+      "step1": {
+        "title": "Analysis and clarification",
+        "description": "We understand the objectives, technical constraints, operational context, and real success criteria."
+      },
+      "step2": {
+        "title": "Solution definition",
+        "description": "We establish the technical architecture, resources, project stages, and implementation method."
+      },
+      "step3": {
+        "title": "Execution and integration",
+        "description": "We coordinate delivery, installation, configuration, and the checks required for reliable operation."
+      },
+      "step4": {
+        "title": "Handover and support",
+        "description": "We stay involved through documentation, training, maintenance, and subsequent optimizations."
+      }
+    },
+    "commitment": {
+      "title": "Our commitment",
+      "subtitle": "Beyond technical capability, we follow a few simple principles in every collaboration.",
+      "points": [
+        "We propose solutions that can be implemented realistically, not just presented well.",
+        "We adapt the level of complexity to the project's goals and budget.",
+        "We coordinate execution and cross-discipline collaboration carefully.",
+        "We respect the applicable quality, traceability, and safety standards.",
+        "We build long-term relationships through responsiveness and post-delivery support."
+      ]
+    },
+    "ctaBand": {
+      "title": "Do you have a project that needs a strong technical team?",
+      "subtitle": "We can review the context, define the options, and build the right solution."
+    }
   },
   "contact": {
     "hero": {

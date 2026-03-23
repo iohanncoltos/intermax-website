@@ -71,7 +71,21 @@
     },
     "caseStudies": {
       "title": "Projets phares",
-      "viewAll": "Voir tous les projets"
+      "viewAll": "Voir tous les projets",
+      "projects": [
+        {
+          "title": "Structures et fabrications métalliques",
+          "description": "Conception et réalisation complexes pour des installations industrielles modernes"
+        },
+        {
+          "title": "Systèmes UAS",
+          "description": "Solutions intégrées pour les systèmes aériens sans pilote et la surveillance"
+        },
+        {
+          "title": "Technologies agricoles",
+          "description": "Systèmes intelligents pour l'agriculture de précision et la surveillance"
+        }
+      ]
     },
     "compliance": {
       "title": "Qualité et conformité",
@@ -142,6 +156,23 @@
       "point3": "Équipes d'installation certifiées et assurées",
       "point4": "Partenariats directs avec des fabricants de systèmes premium européens",
       "point5": "Garanties étendues et service après-installation rapide"
+    },
+    "caseStudies": {
+      "title": "Projets représentatifs",
+      "projects": [
+        {
+          "title": "Complexe résidentiel premium",
+          "description": "Structures métalliques et façades ventilées pour un ensemble résidentiel moderne"
+        },
+        {
+          "title": "Halle industrielle moderne",
+          "description": "Conception et réalisation complètes pour un complexe logistique de 15 000 m²"
+        },
+        {
+          "title": "Centre commercial",
+          "description": "Cloisons coupe-feu et portails métalliques pour un centre commercial régional"
+        }
+      ]
     },
     "faq": {
       "title": "Questions fréquentes",
@@ -321,6 +352,23 @@
       "point4": "Flexibilité: vols à la demande ou contrats saisonniers",
       "point5": "Rapports clairs et exploitables, adaptés au niveau d'expertise du client"
     },
+    "caseStudies": {
+      "title": "Études de cas",
+      "projects": [
+        {
+          "title": "Agriculture de précision - 500 ha",
+          "description": "Mise en place d'un système complet de suivi et d'optimisation pour une culture céréalière"
+        },
+        {
+          "title": "Suivi des pâturages",
+          "description": "Système NDVI pour optimiser la gestion des pâturages et des fourrages"
+        },
+        {
+          "title": "Optimisation de l'irrigation",
+          "description": "Analyse multispectrale pour une gestion efficace des ressources en eau"
+        }
+      ]
+    },
     "faq": {
       "title": "Questions fréquentes",
       "q1": {
@@ -358,10 +406,97 @@
   },
   "about": {
     "hero": {
-      "title": "À propos d'InterMax",
-      "subtitle": "Une équipe d'ingénieurs, techniciens et spécialistes dédiés à l'innovation et à l'excellence technique."
+      "title": "Une ingénierie appliquée pour les projets qui exigent de la rigueur",
+      "subtitle": "InterMax réunit des compétences en construction, en ingénierie de défense et en services agricoles pour des projets où la clarté technique, une exécution maîtrisée et le support après livraison comptent réellement."
     },
-    "comingSoon": "La page à propos est en cours de développement. Pour des informations sur l'entreprise, l'équipe et les valeurs, veuillez nous contacter directement."
+    "intro": {
+      "title": "Qui sommes-nous",
+      "subtitle": "Une entreprise technique orientée vers l'exécution, pas vers les promesses génériques.",
+      "paragraph1": "InterMax est une équipe d'ingénieurs, de techniciens et de spécialistes qui travaillent à l'intersection de la conception, de l'intégration et de l'exécution. Nous construisons des solutions adaptées aux conditions réelles d'exploitation, qu'il s'agisse de bâtiments techniques, de systèmes de sécurité et de défense ou d'opérations agricoles assistées par des technologies aériennes.",
+      "paragraph2": "Notre approche reste la même dans nos trois divisions: comprendre le besoin, définir la solution technique, coordonner la mise en œuvre et rester impliqués jusqu'à la mise en service et au support. Nous privilégions les projets bien exécutés, prévisibles et durables sur le long terme."
+    },
+    "snapshot": {
+      "title": "InterMax en bref",
+      "description": "Nous appliquons la même discipline technique quel que soit le secteur.",
+      "items": [
+        "Trois divisions spécialisées sous une même structure opérationnelle",
+        "Conception, intégration, exécution et support dans un flux cohérent",
+        "Communication claire avec des clients industriels, institutionnels et privés"
+      ]
+    },
+    "pillars": {
+      "title": "Ce qui nous définit",
+      "subtitle": "Les principes qui structurent notre manière de travailler.",
+      "items": [
+        {
+          "title": "Expertise multi-domaines",
+          "description": "Nous combinons les compétences en construction, systèmes techniques et technologies appliquées pour résoudre des projets complexes."
+        },
+        {
+          "title": "Du concept à la livraison",
+          "description": "Nous ne nous arrêtons pas aux recommandations. Nous suivons la solution jusqu'à la mise en œuvre, aux tests et à la remise finale."
+        },
+        {
+          "title": "Collaboration prévisible",
+          "description": "Une communication claire, une planification réaliste et une coordination attentive avec chaque partie impliquée."
+        },
+        {
+          "title": "Qualité et conformité",
+          "description": "Nous travaillons avec des standards clairs, un contrôle d'exécution et une attention constante aux exigences propres à chaque domaine."
+        }
+      ]
+    },
+    "divisions": {
+      "title": "Les trois divisions InterMax",
+      "subtitle": "Chaque division répond à un type de besoin différent, mais toutes suivent la même logique de projet: rigueur, intégration et responsabilité.",
+      "construction": {
+        "title": "Construction",
+        "description": "Systèmes techniques pour bâtiments et installations spéciales: façades, cloisons coupe-feu, structures métalliques, portails et travaux d'exécution spécialisés."
+      },
+      "defense": {
+        "title": "Ingénierie de défense",
+        "description": "Solutions intégrées pour la sécurité, la surveillance et les systèmes aériens sans pilote, adaptées aux exigences opérationnelles et aux infrastructures existantes."
+      },
+      "agriculture": {
+        "title": "Services agricoles",
+        "description": "Cartographie, analyse multispectrale et surveillance aérienne pour de meilleures décisions en agriculture de précision."
+      }
+    },
+    "process": {
+      "title": "Comment nous travaillons",
+      "subtitle": "Un cadre simple, adapté à chaque projet mais suivi avec constance.",
+      "step1": {
+        "title": "Analyse et clarification",
+        "description": "Nous comprenons les objectifs, les contraintes techniques, le contexte opérationnel et les vrais critères de réussite."
+      },
+      "step2": {
+        "title": "Définition de la solution",
+        "description": "Nous établissons l'architecture technique, les ressources, les étapes du projet et la méthode de mise en œuvre."
+      },
+      "step3": {
+        "title": "Exécution et intégration",
+        "description": "Nous coordonnons la livraison, l'installation, la configuration et les vérifications nécessaires à un fonctionnement fiable."
+      },
+      "step4": {
+        "title": "Remise et support",
+        "description": "Nous restons impliqués à travers la documentation, la formation, la maintenance et les optimisations ultérieures."
+      }
+    },
+    "commitment": {
+      "title": "Notre engagement",
+      "subtitle": "Au-delà des compétences techniques, nous suivons quelques principes simples dans chaque collaboration.",
+      "points": [
+        "Nous proposons des solutions réalistes à mettre en œuvre, pas seulement convaincantes en présentation.",
+        "Nous adaptons le niveau de complexité aux objectifs et au budget du projet.",
+        "Nous coordonnons avec rigueur l'exécution et la collaboration entre spécialités.",
+        "Nous respectons les standards applicables de qualité, de traçabilité et de sécurité.",
+        "Nous construisons des relations durables grâce à la réactivité et au support après livraison."
+      ]
+    },
+    "ctaBand": {
+      "title": "Vous avez un projet qui demande une équipe technique solide?",
+      "subtitle": "Nous pouvons analyser le contexte, définir les options et construire la bonne solution."
+    }
   },
   "contact": {
     "hero": {

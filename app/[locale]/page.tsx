@@ -133,18 +133,18 @@ export default async function Home({
         <ProjectCards
           projects={[
             {
-              title: "Structuri și confecții metalice",
-              description: "Proiectare și construcție complexă pentru obiective industriale moderne",
+              title: t("home.caseStudies.projects.0.title"),
+              description: t("home.caseStudies.projects.0.description"),
               image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
             },
             {
-              title: "Sisteme UAS",
-              description: "Soluții integrate pentru sisteme aeriene fără pilot și monitorizare",
+              title: t("home.caseStudies.projects.1.title"),
+              description: t("home.caseStudies.projects.1.description"),
               image: "/photos/8.png",
             },
             {
-              title: "Tehnologii agricole",
-              description: "Sisteme inteligente pentru agricultură de precizie și monitorizare",
+              title: t("home.caseStudies.projects.2.title"),
+              description: t("home.caseStudies.projects.2.description"),
               image: "/photos/9.png",
             },
           ]}

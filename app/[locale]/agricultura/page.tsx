@@ -141,22 +141,22 @@ export default async function AgriculturePage({
       </Section>
 
       {/* Case Studies */}
-      <Section id="case-studies" className="bg-muted/40" title="Case Studies">
+      <Section id="case-studies" className="bg-muted/40" title={t("caseStudies.title")}>
         <ProjectCards
           projects={[
             {
-              title: "Agricultură de precizie - 500 ha",
-              description: "Implementare sistem complet de monitorizare și optimizare cultură cerealieră",
+              title: t("caseStudies.projects.0.title"),
+              description: t("caseStudies.projects.0.description"),
               image: "/photos/16.png",
             },
             {
-              title: "Monitorizare pășuni",
-              description: "Sistem NDVI pentru optimizarea managementului pășunilor și furajelor",
+              title: t("caseStudies.projects.1.title"),
+              description: t("caseStudies.projects.1.description"),
               image: "/photos/17.png",
             },
             {
-              title: "Optimizare irigații",
-              description: "Analiză multspectrală pentru management eficient al resurselor de apă",
+              title: t("caseStudies.projects.2.title"),
+              description: t("caseStudies.projects.2.description"),
               image: "/photos/18.png",
             },
           ]}

@@ -141,22 +141,22 @@ export default async function ConstructionPage({
       </Section>
 
       {/* Case Studies */}
-      <Section id="projects" className="bg-muted/40" title="Proiecte reprezentative">
+      <Section id="projects" className="bg-muted/40" title={t("caseStudies.title")}>
         <ProjectCards
           projects={[
             {
-              title: "Complex rezidențial premium",
-              description: "Structuri metalice și fațade ventilate pentru ansamblul rezidențial modern",
+              title: t("caseStudies.projects.0.title"),
+              description: t("caseStudies.projects.0.description"),
               image: "/photos/25.png",
             },
             {
-              title: "Halăindustrială modernă",
-              description: "Proiectare și execuție completă pentru complex logistic de 15,000 mp",
+              title: t("caseStudies.projects.1.title"),
+              description: t("caseStudies.projects.1.description"),
               image: "/photos/26.png",
             },
             {
-              title: "Centru comercial",
-              description: "Compartimentări REI și porți metalice pentru centru comercial regional",
+              title: t("caseStudies.projects.2.title"),
+              description: t("caseStudies.projects.2.description"),
               image: "/photos/27.png",
             },
           ]}

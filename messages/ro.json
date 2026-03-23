@@ -71,7 +71,21 @@
     },
     "caseStudies": {
       "title": "Proiecte reprezentative",
-      "viewAll": "Vezi toate proiectele"
+      "viewAll": "Vezi toate proiectele",
+      "projects": [
+        {
+          "title": "Structuri și confecții metalice",
+          "description": "Proiectare și construcție complexă pentru obiective industriale moderne"
+        },
+        {
+          "title": "Sisteme UAS",
+          "description": "Soluții integrate pentru sisteme aeriene fără pilot și monitorizare"
+        },
+        {
+          "title": "Tehnologii agricole",
+          "description": "Sisteme inteligente pentru agricultură de precizie și monitorizare"
+        }
+      ]
     },
     "compliance": {
       "title": "Calitate și conformitate",
@@ -142,6 +156,23 @@
       "point3": "Echipe de montaj certificate și asigurate",
       "point4": "Parteneriate directe cu producători europeni de sisteme premium",
       "point5": "Garanții extinse și service post-montaj rapid"
+    },
+    "caseStudies": {
+      "title": "Proiecte reprezentative",
+      "projects": [
+        {
+          "title": "Complex rezidențial premium",
+          "description": "Structuri metalice și fațade ventilate pentru ansamblul rezidențial modern"
+        },
+        {
+          "title": "Hală industrială modernă",
+          "description": "Proiectare și execuție completă pentru complex logistic de 15.000 mp"
+        },
+        {
+          "title": "Centru comercial",
+          "description": "Compartimentări REI și porți metalice pentru centru comercial regional"
+        }
+      ]
     },
     "faq": {
       "title": "Întrebări frecvente",
@@ -321,6 +352,23 @@
       "point4": "Flexibilitate: zbor la cerere sau contracte sezoniere",
       "point5": "Rapoarte clare, actionabile, adaptate nivelului de expertiză al clientului"
     },
+    "caseStudies": {
+      "title": "Studii de caz",
+      "projects": [
+        {
+          "title": "Agricultură de precizie - 500 ha",
+          "description": "Implementare sistem complet de monitorizare și optimizare cultură cerealieră"
+        },
+        {
+          "title": "Monitorizare pășuni",
+          "description": "Sistem NDVI pentru optimizarea managementului pășunilor și furajelor"
+        },
+        {
+          "title": "Optimizare irigații",
+          "description": "Analiză multispectrală pentru management eficient al resurselor de apă"
+        }
+      ]
+    },
     "faq": {
       "title": "Întrebări frecvente",
       "q1": {
@@ -358,10 +406,97 @@
   },
   "about": {
     "hero": {
-      "title": "Despre InterMax",
-      "subtitle": "O echipă de ingineri, tehnicieni și specialisti dedicați inovației și excelenței tehnice."
+      "title": "Inginerie aplicată pentru proiecte care cer rigoare",
+      "subtitle": "InterMax reunește competențe din construcții, defense engineering și servicii în agricultură pentru proiecte unde soluția tehnică, execuția controlată și suportul post-livrare contează."
     },
-    "comingSoon": "Pagina despre noi este în curs de dezvoltare. Pentru informații despre companie, echipă și valori, te rugăm să ne contactezi direct."
+    "intro": {
+      "title": "Cine suntem",
+      "subtitle": "O companie tehnică orientată spre rezultate, nu spre promisiuni generale.",
+      "paragraph1": "InterMax este o echipă de ingineri, tehnicieni și specialiști care lucrează la intersecția dintre proiectare, integrare și execuție. Construim soluții adaptate contextului real de lucru, fie că vorbim despre clădiri tehnice, sisteme pentru securitate și apărare sau operațiuni agricole asistate de tehnologie aeriană.",
+      "paragraph2": "Abordarea noastră rămâne aceeași în toate cele trei divizii: înțelegem cerința, definim soluția tehnică, coordonăm implementarea și rămânem implicați până la punerea în funcțiune și suport. Ne interesează proiectele bine executate, predictibile și sustenabile pe termen lung."
+    },
+    "snapshot": {
+      "title": "InterMax, pe scurt",
+      "description": "Aplicăm aceeași disciplină tehnică, indiferent de industrie.",
+      "items": [
+        "Trei divizii specializate sub aceeași structură operațională",
+        "Proiectare, integrare, execuție și suport într-un flux coerent",
+        "Dialog clar cu beneficiari industriali, instituționali și privați"
+      ]
+    },
+    "pillars": {
+      "title": "Ce ne definește",
+      "subtitle": "Elementele care stau la baza modului nostru de lucru.",
+      "items": [
+        {
+          "title": "Expertiză multi-domeniu",
+          "description": "Punem împreună competențe din construcții, sisteme tehnice și tehnologii aplicate pentru a rezolva proiecte complexe."
+        },
+        {
+          "title": "De la concept la livrare",
+          "description": "Nu ne oprim la recomandări. Urmărim soluția până la implementare, testare și predare."
+        },
+        {
+          "title": "Colaborare predictibilă",
+          "description": "Comunicare clară, planificare realistă și coordonare atentă cu toți actorii implicați."
+        },
+        {
+          "title": "Calitate și conformitate",
+          "description": "Lucrăm cu standarde clare, control al execuției și atenție constantă la cerințele specifice fiecărui domeniu."
+        }
+      ]
+    },
+    "divisions": {
+      "title": "Cele trei divizii InterMax",
+      "subtitle": "Fiecare divizie răspunde unui tip de nevoie, dar toate folosesc aceeași logică de proiect: rigoare, integrare și responsabilitate.",
+      "construction": {
+        "title": "Construcții",
+        "description": "Sisteme tehnice pentru clădiri și obiective speciale: fațade, compartimentări REI, structuri metalice, porți și lucrări de execuție specializată."
+      },
+      "defense": {
+        "title": "Defense Engineering",
+        "description": "Soluții integrate pentru securitate, supraveghere și sisteme aeriene fără pilot, adaptate cerințelor operaționale și infrastructurilor existente."
+      },
+      "agriculture": {
+        "title": "Servicii în agricultură",
+        "description": "Cartografiere, analiză multispectrală și monitorizare aeriană pentru decizii mai bune în agricultura de precizie."
+      }
+    },
+    "process": {
+      "title": "Cum lucrăm",
+      "subtitle": "Un cadru simplu, aplicat diferit în funcție de proiect, dar urmărit consecvent.",
+      "step1": {
+        "title": "Analiză și clarificare",
+        "description": "Înțelegem obiectivele, constrângerile tehnice, contextul operațional și criteriile reale de succes."
+      },
+      "step2": {
+        "title": "Definire soluție",
+        "description": "Stabilim arhitectura tehnică, resursele, etapele și modul de implementare."
+      },
+      "step3": {
+        "title": "Execuție și integrare",
+        "description": "Coordonăm livrarea, montajul, configurarea și verificările necesare pentru funcționare corectă."
+      },
+      "step4": {
+        "title": "Predare și suport",
+        "description": "Rămânem implicați prin documentare, instruire, mentenanță și optimizări ulterioare."
+      }
+    },
+    "commitment": {
+      "title": "Angajamentul nostru",
+      "subtitle": "Pe lângă competența tehnică, urmărim câteva principii simple în fiecare colaborare.",
+      "points": [
+        "Propunem soluții care pot fi implementate realist, nu doar prezentate bine.",
+        "Adaptăm nivelul de complexitate la obiectivul și bugetul proiectului.",
+        "Coordonăm atent execuția și colaborarea dintre specialități.",
+        "Respectăm standardele de calitate, trasabilitate și siguranță aplicabile.",
+        "Construim relații pe termen lung prin răspuns rapid și suport post-livrare."
+      ]
+    },
+    "ctaBand": {
+      "title": "Ai un proiect care cere o echipă tehnică solidă?",
+      "subtitle": "Discutăm contextul, definim opțiunile și construim o soluție potrivită."
+    }
   },
   "contact": {
     "hero": {
